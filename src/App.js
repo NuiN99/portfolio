@@ -16,9 +16,6 @@ const TopSection = () => {
           <Name className='text-light'>Cai Plank</Name>
           <HorizontalDivider className='bg-secondary' />
           <SubName className='text-light'>Game Programmer</SubName>
-          {/* <Col className='text-light d-flex justify-content-center'>
-            <Image src={pfp} alt='PFP' priority width={250} height={250} className='rounded-circle my-auto border border-5 border-secondary' />
-          </Col> */}
         </div>
       </TopSectionBacker>
     </>
