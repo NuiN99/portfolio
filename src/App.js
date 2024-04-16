@@ -4,25 +4,26 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './app/globals.css'
 import React from 'react';
 import { Container, Row, Col, Button, Card, Nav, Tab } from 'react-bootstrap';
-import Image from 'next/image'
-import pfp from './app/media/pfp.jpg';
 import Projects from './app/projects/projects.json'
+import Image from 'next/image';
 
 const TopSection = () => {
   return (
     <>
-      <TopSectionBacker className='bg-dark p-5'>
+      <div className='bg-dark px-3 py-1'>
         <div className='m-5'>
           <Name className='text-light'>Cai Plank</Name>
           <HorizontalDivider className='bg-secondary' />
           <SubName className='text-light'>Game Programmer</SubName>
         </div>
-      </TopSectionBacker>
+      </div>
+
+      <TabButtons />
     </>
   )
 }
 
-const TabSection = () => {
+const TabButtons = () => {
   return (
     <Tab.Container id="bottom-tabs-example" defaultActiveKey="Games">
       <Row>
@@ -60,15 +61,44 @@ const TabSection = () => {
 
 
 const ShowcaseCard = ({ details }) => {
+  const [showGIFCover, setShowGIFCover] = React.useState(true);
+
   return (
     <Card className='flex-shrink-0 m-3' border='info' style={{ width: '30rem' }}>
       <Card.Body>
         <Card.Title>{details.title}</Card.Title>
-        <video src={details.video} className="card-img-top" muted autoPlay loop></video>
+
+        {
+          showGIFCover == true ?
+            <Image
+              src={details.gifCover}
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: '100%', height: 'auto' }}
+              alt="GIF Loading..."
+              onMouseEnter={() => setShowGIFCover(false)} />
+            : null
+        }
+
+        {
+          showGIFCover == false ?
+            <Image
+              src={details.gif}
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: '100%', height: 'auto' }}
+              alt="GIF Loading..."
+              onMouseLeave={() => setShowGIFCover(true)}
+            />
+            : null
+        }
+
         <Card.Text>{details.description}</Card.Text>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
-    </Card>
+    </Card >
   )
 }
 
@@ -92,13 +122,13 @@ const App = () => {
   return (
     <>
       <TopSection />
-      <TabSection />
     </>
   )
 }
 
-const TopSectionBacker = styled.div`
-  height: 20rem;
+
+const TopSectionBackerSmall = styled.div`
+  height: 5rem;
 `
 
 const Name = styled.div`
@@ -114,5 +144,11 @@ const HorizontalDivider = styled.div`
   height: 3px;
   border-radius: 3rem;
 `
+
+const ImageTest = styled(Image)`
+  object-fit: contain;
+`
+
+
 
 export default App;

@@ -1,28 +1,33 @@
 {
     "games": [
         {
-            "title": "Guns to the Power of Guns",
-            "video": "",
+            "title": "RO:CK VR",
+            "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDUxdDhwdGlzOWx0MzlseDh6cGxkYjVhODVhc3JmaHJ4NmozZWd4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/D01VUW6hdqnUgsmGte/source.gif",
+            "gifCover": "/ROCK-VR-cover.jpg",
+            "description": "An absurd physics oriented VR combat game"
+        },
+        {
+            "title": "Gun Game",
+            "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDUxdDhwdGlzOWx0MzlseDh6cGxkYjVhODVhc3JmaHJ4NmozZWd4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/D01VUW6hdqnUgsmGte/source.gif",
+            "gifCover": "/ROCK-VR-still.jpeg",
+            "description": "Funny Gun-Building Action FPS"
+        },
+        {
+            "title": "Bartholomew Bone's Adventure",
+            "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDUxdDhwdGlzOWx0MzlseDh6cGxkYjVhODVhc3JmaHJ4NmozZWd4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/D01VUW6hdqnUgsmGte/source.gif",
+            "gifCover": "/ROCK-VR-still.jpeg",
             "description": "Funny Gun-Building Action FPS"
         },
         {
             "title": "Guns to the Power of Guns",
-            "video": "",
+            "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDUxdDhwdGlzOWx0MzlseDh6cGxkYjVhODVhc3JmaHJ4NmozZWd4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/D01VUW6hdqnUgsmGte/source.gif",
+            "gifCover": "/ROCK-VR-still.jpeg",
             "description": "Funny Gun-Building Action FPS"
         },
         {
             "title": "Guns to the Power of Guns",
-            "video": "",
-            "description": "Funny Gun-Building Action FPS"
-        },
-        {
-            "title": "Guns to the Power of Guns",
-            "video": "",
-            "description": "Funny Gun-Building Action FPS"
-        },
-        {
-            "title": "Guns to the Power of Guns",
-            "video": "",
+            "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDUxdDhwdGlzOWx0MzlseDh6cGxkYjVhODVhc3JmaHJ4NmozZWd4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/D01VUW6hdqnUgsmGte/source.gif",
+            "gifCover": "/ROCK-VR-still.jpeg",
             "description": "Funny Gun-Building Action FPS"
         }
     ]
