@@ -76,7 +76,7 @@ const ShowcaseCard = ({ details }) => {
               height={0}
               sizes="100vw"
               style={{ width: '100%', height: 'auto' }}
-              alt="GIF Loading..."
+              alt="Image Loading..."
               onMouseEnter={() => setShowGIFCover(false)} />
             : null
         }
@@ -96,7 +96,9 @@ const ShowcaseCard = ({ details }) => {
         }
 
         <Card.Text>{details.description}</Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <a href={details.link}>
+          <Button variant="primary">itch.io</Button>
+        </a>
       </Card.Body>
     </Card >
   )
