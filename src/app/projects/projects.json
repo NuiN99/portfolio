@@ -2,17 +2,17 @@
     "games": [
         {
             "title": "RO:CK VR",
-            "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDUxdDhwdGlzOWx0MzlseDh6cGxkYjVhODVhc3JmaHJ4NmozZWd4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/D01VUW6hdqnUgsmGte/source.gif",
-            "gifCover": "/ROCK-VR-cover.jpg",
+            "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGhodnVqYXoxc2lhbGszYTZiYnk0NHNmYzI1dDhvamdrY3FudTl5cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VEPMNIw0O0MSAfFJM9/source.gif",
+            "gifCover": "/ROCK-VR-Cover.jpg",
             "link": "https://nuin.itch.io/rock-vr",
-            "description": "An absurd physics oriented VR combat game"
+            "description": "Silly physics oriented VR combat sandbox"
         },
         {
             "title": "Guns to the Power of Guns",
-            "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDUxdDhwdGlzOWx0MzlseDh6cGxkYjVhODVhc3JmaHJ4NmozZWd4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/D01VUW6hdqnUgsmGte/source.gif",
-            "gifCover": "/ROCK-VR-still.jpeg",
-            "link": "https://nuin.itch.io/rock-vr",
-            "description": "Funny Gun-Building Action FPS"
+            "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWg2MDBwZnIwOWo0dDZjYzM1dmVneTV4OWVjMm0wejl1bTl2dTdsZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/a6KvtxwPect6UMqmOQ/giphy.gif",
+            "gifCover": "/Gun-Game-Cover.jpg",
+            "link": "https://nuin.itch.io/guns-to-the-power-of-guns",
+            "description": "Absurd gun building FPS"
         },
         {
             "title": "Bartholomew Bone's Adventure",

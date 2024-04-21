@@ -1,10 +1,10 @@
 "use client"
 import styled from 'styled-components';
-import 'bootstrap/dist/css/bootstrap.css'
-import './app/globals.css'
+import 'bootstrap/dist/css/bootstrap.css';
+import './app/globals.css';
 import React from 'react';
 import { Container, Row, Col, Button, Card, Nav, Tab } from 'react-bootstrap';
-import Projects from './app/projects/projects.json'
+import Projects from './app/projects/projects.json';
 import Image from 'next/image';
 
 const TopSection = () => {
