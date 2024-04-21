@@ -96,7 +96,7 @@ const ShowcaseCard = ({ details }) => {
         }
 
         <Card.Text>{details.description}</Card.Text>
-        <a href={details.link}>
+        <a href={details.link} target="_blank">
           <Button variant="primary">itch.io</Button>
         </a>
       </Card.Body>
