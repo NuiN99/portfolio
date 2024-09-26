@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Unity",
+        "percent": 100,
+        "proficiency" : "Advanced"
+    },
+    {
+        "name": "C#",
+        "percent": 100,
+        "proficiency" : "Advanced"
+    },
+    {
+        "name": "GitHub",
+        "percent": 66,
+        "proficiency" : "Proficient"
+    },
+    {
+        "name": "P4V",
+        "percent": 66,
+        "proficiency" : "Proficient"
+    },
+    {
+        "name": "C++",
+        "percent": 33,
+        "proficiency" : "Competent"
+    },
+    {
+        "name": "JavaScript",
+        "percent": 33,
+        "proficiency" : "Competent"
+    }
+]

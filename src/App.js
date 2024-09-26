@@ -1,13 +1,15 @@
 "use client"
 import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.css';
-import './app/globals.css';
 import React from 'react';
-import { Container, Row, Col, Button, Card, Nav, Tab } from 'react-bootstrap';
+import { Row, Col, Card, Button } from 'react-bootstrap';
 import Colours from './colours.js';
-import Projects from './app/projects/projects.json';
-import Image from 'next/image';
+import Projects from './app/content/projects.json';
+import Skills from './app/content/skills.json';
+import AboutMeContent from './app/content/aboutme.json';
+import Image from 'react-bootstrap/Image';
 import {ReactSocialMediaIcons} from 'react-social-media-icons';
+import ProgressBar from './app/progressBar';
 
 const SocialButton = ({icon, url, isGitHub = false}) => {
   const [isHighlighted, setIsHighlighted] = React.useState(false);
@@ -18,32 +20,24 @@ const SocialButton = ({icon, url, isGitHub = false}) => {
       icon={icon}
       url={url}
       borderWidth={0}
-      iconColor={isHighlighted ? Colours.ORANGE : (isGitHub ? Colours.PURPLE : Colours.HERO)} 
-      backgroundColor={isGitHub ? Colours.HERO : Colours.PURPLE} 
+      iconColor={(isGitHub ? (isHighlighted ? Colours.ORANGE : Colours.PURPLE) : Colours.HERO)} 
+      backgroundColor={isGitHub ? Colours.HERO : (isHighlighted ? Colours.ORANGE : Colours.PURPLE)} 
       size={isGitHub ? 60 : 40}/>
     </span>
   )
 }
 
-const GitHubButton = () => {
-  const [isHighlighted, setIsHighlighted] = React.useState(false);
-
-  return (
-    <span onMouseEnter={() => setIsHighlighted(true)} onMouseLeave={() => setIsHighlighted(false)}>
-      <ReactSocialMediaIcons icon="github" url="https://github.com/NuiN99" borderWidth={0} iconColor={isHighlighted ? Colours.ORANGE : Colours.PURPLE} backgroundColor={Colours.HERO} size={60}/>
-    </span>
-  )
-}
-
-const LinkedInButton = () => {
-  return (
-    <ReactSocialMediaIcons icon="linkedin" url="https://www.linkedin.com/in/cai-plank/" borderWidth={0} iconColor={Colours.HERO} backgroundColor={Colours.PURPLE} size={40}/>
+const AboutMeButton = (props) => {
+  return(
+    <button {...props}>
+      More About Me
+    </button>
   )
 }
 
 const Navbar = () => {
   return (
-    <>
+    <StickyTopWrapper>
       <HeroColorWrapper>
         <HorizontalMarginLarge className='p-4'>
           <Row>
@@ -60,26 +54,78 @@ const Navbar = () => {
           </Row>
         </HorizontalMarginLarge>
       </HeroColorWrapper>
-    </>
+    </StickyTopWrapper>
   )
+}
+
+const HeroSection = () => {
+  return(
+    <HeroColorWrapper>
+      <HorizontalMarginLarge className='p-4'>
+        <Row className='py-5'>
+          <Col md={3}>
+            <Image src="profile_picture.jpg" roundedCircle fluid />
+          </Col>
+          <Col md={6} className='text-center px-5 my-auto text-light'>
+            <HeroAboutText>
+              {AboutMeContent.hero}
+            </HeroAboutText>
+            <StyledAboutMeButton className='mt-3'>
+              More About Me
+            </StyledAboutMeButton>
+          </Col>
+          <Col md={3} className='my-auto text-light'>
+            <SkillsSection />
+          </Col>
+        </Row>
+      </HorizontalMarginLarge>
+    </HeroColorWrapper>
+  )
+}
+
+const SkillsSection = () => {
+  return(
+    <>
+      <SkillsHeaderText>
+        Technical Skills
+      </SkillsHeaderText>
+      {Skills.map((skill, index) => (
+        <div className='my-2' key={index}>
+          <Row>
+            <Col>
+              <SkillText>
+                {skill.name}
+              </SkillText>
+            </Col>
+            <Col className='text-end'>
+              <SkillText>
+                {skill.proficiency}
+              </SkillText>
+            </Col>
+          </Row>
+          <ProgressBar percent={skill.percent}/>
+        </div>
+      ))}
+    </>
+  ) 
 }
 
 const ProjectsSection = () => {
   return (
     <BGColorWrapper>
-      <HorizontalMarginMedium>
-      <div className='d-flex flex-wrap justify-content-center'>
-        {
-          Projects.games.map((details, index) => {
-            return (
-              <ProjectCard details={details} key={index}></ProjectCard>
-            );
-          })
-        }
-      </div>
-      </HorizontalMarginMedium>
+      <HorizontalMarginLarge className='p-4'>
+        <div className='container'>
+          <Row className="justify-content-center">
+            {Projects.games.map((details, index) => (
+              <Col md={6} sm={12} xs={12} key={index} className="d-flex justify-content-center">
+                <ProjectCard details={details}></ProjectCard>
+              </Col>
+            ))}
+          </Row>
+        </div>
+      </HorizontalMarginLarge>
     </BGColorWrapper>
-  )
+  );
 }
 
 const ProjectCard = ({ details }) => {
@@ -109,10 +155,18 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <HeroSection/>
       <ProjectsSection />
     </>
   )
 }
+
+const StickyTopWrapper = styled.span`
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 999;
+`
 
 const HeroColorWrapper = styled.div`
   background-color: ${Colours.HERO};
@@ -133,6 +187,19 @@ const TitleText = styled.div`
   font-size: 1.5rem;
 `
 
+const SkillsHeaderText = styled.div`
+  font-size: 1.25rem;
+  font-weight: bold;
+`
+
+const SkillText = styled.div`
+  font-size: 1rem;
+`
+
+const HeroAboutText = styled.div`
+  font-size: 1.25rem;
+`
+
 const HorizontalDivider = styled.div`
   height: 3px;
   border-radius: 3rem;
@@ -143,15 +210,39 @@ const HorizontalMarginLarge = styled.div`
   margin-left: 350px;
 `
 
-const HorizontalMarginMedium = styled.div`
-  margin-right: 128px;
-  margin-left: 128px;
-`
-
 const FloatRight = styled.div`
   float: right;
 `
 
+const StyledAboutMeButton = styled(AboutMeButton)`
+    background-color: ${Colours.HERO};
+    border: 4px solid ${Colours.PURPLE};
+    border-radius: 2rem;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
 
+    &:hover {
+      border: 4px solid ${Colours.ORANGE};
+    }
+`
+
+const styles = {
+  container: {
+    height: '10px',
+    width: '100%',
+    backgroundColor: 'white',
+    borderRadius: '5px',
+    overflow: 'hidden',
+  },
+  progress: {
+    height: '100%',
+    backgroundColor: '#3498db', // Change this to your preferred color
+    transition: 'width 0.3s ease',
+  },
+};
 
 export default App;
