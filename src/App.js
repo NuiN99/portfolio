@@ -35,6 +35,14 @@ const AboutMeButton = (props) => {
   )
 }
 
+const ResumeButton = (props) => {
+  return(
+    <a {...props}>
+      Resume
+    </a>
+  )
+}
+
 const Navbar = () => {
   return (
     <StickyTopWrapper>
@@ -45,11 +53,10 @@ const Navbar = () => {
               <NameText>Cai Plank</NameText>
               <TitleText className='text-light'>Game Programmer</TitleText>
             </Col>
-            <Col>
-              <FloatRight>
-                <SocialButton icon="github" url="https://github.com/NuiN99" isGitHub={true}/>
+            <Col className='d-flex justify-content-end align-items-center'>
                 <SocialButton icon="linkedin" url="https://www.linkedin.com/in/cai-plank/"/>
-              </FloatRight>
+                <SocialButton icon="github" url="https://github.com/NuiN99" isGitHub={true}/>
+                <StyledResumeAnchor href="caiplankresume.pdf" target="_blank" rel="noreferrer"/>
             </Col>
           </Row>
         </HorizontalMarginLarge>
@@ -64,15 +71,13 @@ const HeroSection = () => {
       <HorizontalMarginLarge className='p-4'>
         <Row className='py-5'>
           <Col md={3}>
-            <Image src="profile_picture.jpg" roundedCircle fluid />
+            <StyledImageOrangeBorder src="profile_picture.jpg" roundedCircle fluid/>
           </Col>
           <Col md={6} className='text-center px-5 my-auto text-light'>
             <HeroAboutText>
               {AboutMeContent.hero}
             </HeroAboutText>
-            <StyledAboutMeButton className='mt-3'>
-              More About Me
-            </StyledAboutMeButton>
+            <StyledAboutMeButton className='mt-3' />
           </Col>
           <Col md={3} className='my-auto text-light'>
             <SkillsSection />
@@ -210,10 +215,6 @@ const HorizontalMarginLarge = styled.div`
   margin-left: 350px;
 `
 
-const FloatRight = styled.div`
-  float: right;
-`
-
 const StyledAboutMeButton = styled(AboutMeButton)`
     background-color: ${Colours.HERO};
     border: 4px solid ${Colours.PURPLE};
@@ -227,22 +228,29 @@ const StyledAboutMeButton = styled(AboutMeButton)`
 
     &:hover {
       border: 4px solid ${Colours.ORANGE};
+      color: ${Colours.ORANGE};
     }
 `
 
-const styles = {
-  container: {
-    height: '10px',
-    width: '100%',
-    backgroundColor: 'white',
-    borderRadius: '5px',
-    overflow: 'hidden',
-  },
-  progress: {
-    height: '100%',
-    backgroundColor: '#3498db', // Change this to your preferred color
-    transition: 'width 0.3s ease',
-  },
-};
+const StyledResumeAnchor = styled(ResumeButton)`
+    background-color: ${Colours.HERO};
+    border: 3px solid ${Colours.PURPLE};
+    border-radius: 0.5rem;
+    color: ${Colours.PURPLE};
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+
+    &:hover {
+      border: 3px solid ${Colours.ORANGE};
+      color: ${Colours.ORANGE};
+    }
+`
+
+const StyledImageOrangeBorder = styled(Image)`
+  border: 3px solid ${Colours.ORANGE};
+`
 
 export default App;
