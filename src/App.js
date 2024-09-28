@@ -119,6 +119,12 @@ const ProjectsSection = () => {
   return (
     <BGColorWrapper>
       <HorizontalMarginLarge className='p-4'>
+
+        <ProjectSectionText className='text-center px-3'>
+          Games
+          <HorizontalDivider />
+        </ProjectSectionText>
+
         <div className='container'>
           <Row className="justify-content-center">
             {Projects.games.map((details, index) => (
@@ -135,24 +141,20 @@ const ProjectsSection = () => {
 
 const ProjectCard = ({ details }) => {
   return (
-    <Card className='flex-shrink-0 m-3' style={{ width: '35rem' }}>
-      <Card.Body>
-        <Image
-              src={details.gif}
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: '100%', height: 'auto' }}
-              alt="GIF Loading..."
-        />
-        <div className='py-1'></div>
-        <Card.Title>{details.title}</Card.Title>
-        <Card.Text>{details.description}</Card.Text>
-        <a href={details.link} target="_blank">
-          <Button variant="primary">itch.io</Button>
-        </a>
-      </Card.Body>
-    </Card >
+        <HeroColorWrapper className='flex-shrink-0 m-3 text-light' style={{ width: '35rem' }}>
+          <Image
+                  src={details.gif}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: '100%', height: 'auto' }}
+                  alt="GIF Loading..."
+            />
+          <div className='m-3'>            
+            <ProjectTitleText>{details.title}</ProjectTitleText>
+            <ProjectDescriptionText>{details.description}</ProjectDescriptionText>
+          </div>
+      </HeroColorWrapper >
   )
 }
 
@@ -192,6 +194,12 @@ const TitleText = styled.div`
   font-size: 1.5rem;
 `
 
+const ProjectSectionText = styled.div`
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+`
+
 const SkillsHeaderText = styled.div`
   font-size: 1.25rem;
   font-weight: bold;
@@ -201,6 +209,17 @@ const SkillText = styled.div`
   font-size: 1rem;
 `
 
+const ProjectTitleText = styled.div`
+  color: ${Colours.ORANGE};
+  font-size: 1.5rem;
+  font-weight: bold;
+`
+
+const ProjectDescriptionText = styled.div`
+  color: white;
+  font-size = 1rem;
+`
+
 const HeroAboutText = styled.div`
   font-size: 1.25rem;
 `
@@ -208,6 +227,7 @@ const HeroAboutText = styled.div`
 const HorizontalDivider = styled.div`
   height: 3px;
   border-radius: 3rem;
+  background-color: ${Colours.ORANGE}
 `
 
 const HorizontalMarginLarge = styled.div`
