@@ -2,32 +2,27 @@
     "games": [
         {
             "title": "RO:CK VR",
-            "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGhodnVqYXoxc2lhbGszYTZiYnk0NHNmYzI1dDhvamdrY3FudTl5cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VEPMNIw0O0MSAfFJM9/source.gif",
-            "link": "https://nuin.itch.io/rock-vr",
+            "src": "showcases/rock_showcase_short.mp4",
             "description": "Ruthless Orangutan: Cromagnon Killer is a VR physics combat sandbox created during the Advanced Simulation course at Camosun College. It features active ragdolls, physics based combat, and a fun vine to grappling hook swing around with."
         },
         {
             "title": "Gun to the Power of Gun",
-            "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWg2MDBwZnIwOWo0dDZjYzM1dmVneTV4OWVjMm0wejl1bTl2dTdsZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/a6KvtxwPect6UMqmOQ/giphy.gif",
-            "link": "https://nuin.itch.io/gun-to-the-power-of-gun",
+            "src": "showcases/gungame_showcase_short.mp4",
             "description": "Created in 48 hours for the Global Game Jam 2024 in Victoria, this game allows players to put other guns they pick up onto their gun, eventually leading to them creating a gun monstrosity."
         },
         {
             "title": "Bartholomew Bone's Adventure",
-            "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHFmNWNtbnhsdHBvZ3RzdDBvaXRjemJrdG0xcnVybzJrMWJvZjk1ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2OCHdhM3Sv59gApZPL/source.gif",
-            "link": "https://nuin.itch.io/bartholomew-bones-adventure",
+            "src": "showcases/zombiegame_showcase_short.mp4",
             "description": "This game was created as the final project for the Artifical Intelligence course at Camosun College. It features various AI agents using finite state machines."
         },
         {
             "title": "Hell NO",
-            "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDUxdDhwdGlzOWx0MzlseDh6cGxkYjVhODVhc3JmaHJ4NmozZWd4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/D01VUW6hdqnUgsmGte/source.gif",
-            "link": "https://nuin.itch.io/hell-no",
+            "src": "showcases/rock_showcase_short.mp4",
             "description": "Physics based arcade style stacking game"
         },
         {
             "title": "Guns to the Power of Guns",
-            "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDUxdDhwdGlzOWx0MzlseDh6cGxkYjVhODVhc3JmaHJ4NmozZWd4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/D01VUW6hdqnUgsmGte/source.gif",
-            "link": "https://nuin.itch.io/rock-vr",
+            "src": "showcases/rock_showcase_short.mp4",
             "description": "Funny Gun-Building Action FPS"
         }
     ]

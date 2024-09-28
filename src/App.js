@@ -142,14 +142,11 @@ const ProjectsSection = () => {
 const ProjectCard = ({ details }) => {
   return (
         <HeroColorWrapper className='flex-shrink-0 m-3 text-light' style={{ width: '35rem' }}>
-          <Image
-                  src={details.gif}
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{ width: '100%', height: 'auto' }}
-                  alt="GIF Loading..."
-            />
+          
+          <FluidVideo autoPlay loop muted playsInline>
+              <source src={details.src} type="video/mp4" />
+          </FluidVideo>
+            
           <div className='m-3'>            
             <ProjectTitleText>{details.title}</ProjectTitleText>
             <ProjectDescriptionText>{details.description}</ProjectDescriptionText>
@@ -271,6 +268,11 @@ const StyledResumeAnchor = styled(ResumeButton)`
 
 const StyledImageOrangeBorder = styled(Image)`
   border: 3px solid ${Colours.ORANGE};
+`
+
+const FluidVideo = styled.video`
+  width: 100%;
+  height: auto;
 `
 
 export default App;
