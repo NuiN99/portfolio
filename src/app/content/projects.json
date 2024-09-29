@@ -3,25 +3,30 @@
         {
             "title": "RO:CK VR",
             "src": "showcases/rock_showcase_short.mp4",
-            "description": "Ruthless Orangutan: Cromagnon Killer is a VR physics combat sandbox created during the Advanced Simulation course at Camosun College. It features active ragdolls, physics based combat, and a fun vine to grappling hook swing around with."
+            "description": "This game was my final project for COMP-246 (Advanced Simulation) at Camosun College. Become a virtual reality monkey, swing around using a vine, and take revenge on the cavemen that ate your family."
         },
         {
             "title": "Gun to the Power of Gun",
             "src": "showcases/gungame_showcase_short.mp4",
-            "description": "Created in 48 hours for the Global Game Jam 2024 in Victoria, this game allows players to put other guns they pick up onto their gun, eventually leading to them creating a gun monstrosity."
+            "description": "This game was created for the Global Game Jam 2024 in Victoria. The main mechanic allows players to attach guns they pick up onto their current gun, leading to a huge variety of gun monstrosities."
         },
         {
             "title": "Bartholomew Bone's Adventure",
             "src": "showcases/zombiegame_showcase_short.mp4",
-            "description": "This game was created as the final project for the Artifical Intelligence course at Camosun College. It features various AI agents using finite state machines."
+            "description": "This game was my final project for COMP-245 (Artifical Intelligence) at Camosun College. It features multiple different AI agents, four different weapons, sliceable zombie limbs, and a final boss fight."
         },
         {
             "title": "Hell NO",
-            "src": "showcases/rock_showcase_short.mp4",
-            "description": "Physics based arcade style stacking game"
+            "src": "showcases/hellno_showcase_short.mp4",
+            "description": "This game was created for the BIGA 5000$ Mini Game Challenge and won 3rd place. Play as a little spirit trying to escape hell by stacking objects up, while devious poltergeists try to knock you down."
         },
         {
-            "title": "Guns to the Power of Guns",
+            "title": "Jambulance",
+            "src": "showcases/rock_showcase_short.mp4",
+            "description": "Funny Gun-Building Action FPS"
+        },
+        {
+            "title": "RELEASE THE MEAT",
             "src": "showcases/rock_showcase_short.mp4",
             "description": "Funny Gun-Building Action FPS"
         }

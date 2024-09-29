@@ -141,11 +141,16 @@ const ProjectsSection = () => {
 
 const ProjectCard = ({ details }) => {
   return (
-        <HeroColorWrapper className='flex-shrink-0 m-3 text-light' style={{ width: '35rem' }}>
+        <HeroColorWrapper className='flex-shrink-0 m-3 text-light rounded-2' style={{ width: '35rem' }}>
           
-          <FluidVideo autoPlay loop muted playsInline>
-              <source src={details.src} type="video/mp4" />
-          </FluidVideo>
+          <RelativeDiv>
+            <ProjectInfoOverlay className='px-3 py-1'>
+              {details.createdFor}
+            </ProjectInfoOverlay>
+            <FluidVideo autoPlay loop muted playsInline className='rounded-top-2'>
+                <source src={details.src} type="video/mp4" />
+            </FluidVideo>
+          </RelativeDiv>
             
           <div className='m-3'>            
             <ProjectTitleText>{details.title}</ProjectTitleText>
@@ -273,6 +278,19 @@ const StyledImageOrangeBorder = styled(Image)`
 const FluidVideo = styled.video`
   width: 100%;
   height: auto;
+`
+
+const ProjectInfoOverlay = styled.div`
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white; 
+  bottom: 6px;
+  width: 100%; /* Fill the width of the parent */
+`
+
+const RelativeDiv = styled.div`
+  position: relative;
+  margin-bottom: -9px;
 `
 
 export default App;
