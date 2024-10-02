@@ -145,7 +145,6 @@ const ProjectCard = ({ details }) => {
           
           <RelativeDiv>
             <ProjectInfoOverlay className='px-3 py-1'>
-              {details.createdFor}
             </ProjectInfoOverlay>
             <FluidVideo autoPlay loop muted playsInline className='rounded-top-2'>
                 <source src={details.src} type="video/mp4" />
@@ -154,6 +153,7 @@ const ProjectCard = ({ details }) => {
             
           <div className='m-3'>            
             <ProjectTitleText>{details.title}</ProjectTitleText>
+            <ProjectReasonText className='mb-3'>{details.reason}</ProjectReasonText>
             <ProjectDescriptionText>{details.description}</ProjectDescriptionText>
           </div>
       </HeroColorWrapper >
@@ -219,8 +219,13 @@ const ProjectTitleText = styled.div`
 
 const ProjectDescriptionText = styled.div`
   color: white;
-  font-size = 1rem;
+  font-size: 1rem;
 `
+const ProjectReasonText = styled.div`
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+` 
 
 const HeroAboutText = styled.div`
   font-size: 1.25rem;

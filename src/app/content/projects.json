@@ -3,32 +3,38 @@
         {
             "title": "RO:CK VR",
             "src": "showcases/rock_showcase_short.mp4",
-            "description": "This game was my final project for COMP-246 (Advanced Simulation) at Camosun College. Become a virtual reality monkey, swing around using a vine, and take revenge on the cavemen that ate your family."
+            "reason": "Final project for COMP-246 (Advanced Simulation)",
+            "description": "Become a virtual reality monkey, swing around using a vine, and take revenge on the cavemen that ate your family."
         },
         {
             "title": "Gun to the Power of Gun",
             "src": "showcases/gungame_showcase_short.mp4",
-            "description": "This game was created for the Global Game Jam 2024 in Victoria. The main mechanic allows players to attach guns they pick up onto their current gun, leading to a huge variety of gun monstrosities."
+            "reason": "Victoria Global Game Jam 2024 Submission",
+            "description": "This game allows players to attach guns they pick up onto their current gun, leading to a huge variety of gun monstrosities."
         },
         {
             "title": "Bartholomew Bone's Adventure",
             "src": "showcases/zombiegame_showcase_short.mp4",
-            "description": "This game was my final project for COMP-245 (Artifical Intelligence) at Camosun College. It features multiple different AI agents, four different weapons, sliceable zombie limbs, and a final boss fight."
+            "reason": "Final project for COMP-245 (Artificial Intelligence)",
+            "description": "A zombie adventure game featuring multiple different AI agents, four unique weapons, sliceable zombie limbs, and a final boss fight."
         },
         {
             "title": "Hell NO",
             "src": "showcases/hellno_showcase_short.mp4",
-            "description": "This game was created for the BIGA 5000$ Mini Game Challenge and won 3rd place. Play as a little spirit trying to escape hell by stacking objects up, while devious poltergeists try to knock you down."
+            "reason": "BIGA $5000 Mini Game Challenge Submission (3rd Place Winner)",
+            "description": "Play as a little spirit trying to escape hell by stacking objects on top of each other, while scheming poltergeists try to knock you down."
         },
         {
             "title": "Jambulance",
-            "src": "showcases/rock_showcase_short.mp4",
-            "description": "Funny Gun-Building Action FPS"
+            "src": "showcases/jambulance_showcase_short.mp4",
+            "reason": "Ludum Dare 54 Submission",
+            "description": "Navigate an ambulance through a heavy traffic jam to get your patient to the hospital before they die. Try not to explode along the way!"
         },
         {
             "title": "RELEASE THE MEAT",
-            "src": "showcases/rock_showcase_short.mp4",
-            "description": "Funny Gun-Building Action FPS"
+            "src": "showcases/releasethemeat_showcase_short.mp4",
+            "reason": "Ludum Dare 53 Submission (Top 100)",
+            "description": "Create the perfect cart, fill it up with meat, and bring it to the end of the level while trying to keep as much meat inside as you can."
         }
     ]
 }
