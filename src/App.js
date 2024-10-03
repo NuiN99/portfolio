@@ -116,30 +116,48 @@ const SkillsSection = () => {
 }
 
 const ProjectsSection = () => {
+  const gamesIsOdd = Projects.games.length % 2 !== 0;
+  const toolsIsOdd = Projects.tools.length % 2 !== 0;
+
   return (
     <BGColorWrapper>
       <HorizontalMarginLarge className='p-4'>
-
-        <ProjectSectionText className='text-center px-3'>
+        <ProjectSectionText className='text-center px-3 mt-3'>
           Games
-          <HorizontalDivider />
+          <HorizontalDividerOrange />
         </ProjectSectionText>
 
         <div className='container'>
-          <Row className="justify-content-center">
+          <Row className={`justify-content-center ${gamesIsOdd ? 'justify-content-md-start' : ''}`}>
             {Projects.games.map((details, index) => (
               <Col md={6} sm={12} xs={12} key={index} className="d-flex justify-content-center">
-                <ProjectCard details={details}></ProjectCard>
+                <ProjectCard details={details} isGame={true}></ProjectCard>
               </Col>
             ))}
           </Row>
         </div>
+
+        <ProjectSectionText className='text-center px-3 mt-4'>
+          Systems & Tools
+          <HorizontalDividerPurple />
+        </ProjectSectionText>
+
+        <div className='container'>
+          <Row className={`justify-content-center ${toolsIsOdd ? 'justify-content-md-start' : ''}`}>
+            {Projects.tools.map((details, index) => (
+              <Col md={6} sm={12} xs={12} key={index} className="d-flex justify-content-center">
+                <ProjectCard details={details} isGame={false}></ProjectCard>
+              </Col>
+            ))}
+          </Row>
+        </div>
+
       </HorizontalMarginLarge>
     </BGColorWrapper>
   );
 }
 
-const ProjectCard = ({ details }) => {
+const ProjectCard = ({ details, isGame }) => {
   return (
         <HeroColorWrapper className='flex-shrink-0 m-3 text-light rounded-2' style={{ width: '35rem' }}>
           
@@ -152,7 +170,7 @@ const ProjectCard = ({ details }) => {
           </RelativeDiv>
             
           <div className='m-3'>            
-            <ProjectTitleText>{details.title}</ProjectTitleText>
+            {isGame ? <GameTitleText>{details.title}</GameTitleText> : <ToolTitleText>{details.title}</ToolTitleText>}
             <ProjectReasonText className='mb-3'>{details.reason}</ProjectReasonText>
             <ProjectDescriptionText>{details.description}</ProjectDescriptionText>
           </div>
@@ -211,8 +229,14 @@ const SkillText = styled.div`
   font-size: 1rem;
 `
 
-const ProjectTitleText = styled.div`
+const GameTitleText = styled.div`
   color: ${Colours.ORANGE};
+  font-size: 1.5rem;
+  font-weight: bold;
+`
+
+const ToolTitleText = styled.div`
+  color: ${Colours.PURPLE};
   font-size: 1.5rem;
   font-weight: bold;
 `
@@ -231,10 +255,16 @@ const HeroAboutText = styled.div`
   font-size: 1.25rem;
 `
 
-const HorizontalDivider = styled.div`
+const HorizontalDividerOrange = styled.div`
   height: 3px;
   border-radius: 3rem;
   background-color: ${Colours.ORANGE}
+`
+
+const HorizontalDividerPurple = styled.div`
+  height: 3px;
+  border-radius: 3rem;
+  background-color: ${Colours.PURPLE}
 `
 
 const HorizontalMarginLarge = styled.div`

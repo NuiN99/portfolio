@@ -3,7 +3,7 @@
         {
             "title": "RO:CK VR",
             "src": "showcases/rock_showcase_short.mp4",
-            "reason": "Final project for COMP-246 (Advanced Simulation)",
+            "reason": "Final project for COMP-246 - Advanced Simulation",
             "description": "Become a virtual reality monkey, swing around using a vine, and take revenge on the cavemen that ate your family."
         },
         {
@@ -15,7 +15,7 @@
         {
             "title": "Bartholomew Bone's Adventure",
             "src": "showcases/zombiegame_showcase_short.mp4",
-            "reason": "Final project for COMP-245 (Artificial Intelligence)",
+            "reason": "Final project for COMP-245 - Artificial Intelligence",
             "description": "A zombie adventure game featuring multiple different AI agents, four unique weapons, sliceable zombie limbs, and a final boss fight."
         },
         {
@@ -35,6 +35,44 @@
             "src": "showcases/releasethemeat_showcase_short.mp4",
             "reason": "Ludum Dare 53 Submission (Top 100)",
             "description": "Create the perfect cart, fill it up with meat, and bring it to the end of the level while trying to keep as much meat inside as you can."
+        },
+        {
+            "title": "C++ Tetris",
+            "src": "showcases/tetris_showcase_short.mp4",
+            "reason": "Final project for ICS 214 - Programming from C to C++",
+            "description": "A Tetris clone created with C++ for the backend, and SFML for the graphics."
+        },
+        {
+            "title": "The Hunt",
+            "src": "showcases/thehunt_showcase_short.mp4",
+            "reason": "Final project for ART 155 - Digital Movement & Narrative Structures",
+            "description": "A short experience where you hunt down a mythical creature in the forest, and then become hunted yourself."
+        }
+    ],
+    "tools": [
+        {
+            "title": "Scriptable Harmony",
+            "src": "",
+            "reason": "Personal project",
+            "description": "An asset that uses ScriptableObjects to simplify workflows within the Unity editor, that also includes a scriptable object audio system."
+        },
+        {
+            "title": "SpleenTween",
+            "src": "",
+            "reason": "Personal project",
+            "description": "A performant tweening library for Unity that uses C# actions, allowing for smooth animations of positions and values."
+        },
+        {
+            "title": "NExtensions",
+            "src": "",
+            "reason": "Personal project",
+            "description": "A toolbox of extension and utility methods, custom classes, timers, and many more helpful tools that help speed up development time."
+        },
+        {
+            "title": "Command Console",
+            "src": "",
+            "reason": "Personal project",
+            "description": "An in game console that provides an easy way to create and input commands for cheat codes or debugging."
         }
     ]
 }
