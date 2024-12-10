@@ -2,31 +2,31 @@
     {
         "name": "Unity",
         "percent": 100,
-        "proficiency" : "Advanced"
+        "proficiency": "Advanced"
     },
     {
         "name": "C#",
         "percent": 100,
-        "proficiency" : "Advanced"
+        "proficiency": "Advanced"
     },
     {
         "name": "GitHub",
-        "percent": 66,
-        "proficiency" : "Proficient"
+        "percent": 100,
+        "proficiency": "Advanced"
     },
     {
         "name": "P4V",
         "percent": 66,
-        "proficiency" : "Proficient"
+        "proficiency": "Proficient"
     },
     {
         "name": "C++",
-        "percent": 33,
-        "proficiency" : "Competent"
+        "percent": 66,
+        "proficiency": "Proficient"
     },
     {
         "name": "JavaScript",
-        "percent": 33,
-        "proficiency" : "Competent"
+        "percent": 66,
+        "proficiency": "Proficient"
     }
 ]

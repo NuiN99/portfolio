@@ -8,27 +8,27 @@ import Projects from './app/content/projects.json';
 import Skills from './app/content/skills.json';
 import AboutMeContent from './app/content/aboutme.json';
 import Image from 'react-bootstrap/Image';
-import {ReactSocialMediaIcons} from 'react-social-media-icons';
+import { ReactSocialMediaIcons } from 'react-social-media-icons';
 import ProgressBar from './app/progressBar';
 
-const SocialButton = ({icon, url, isGitHub = false}) => {
+const SocialButton = ({ icon, url, isGitHub = false }) => {
   const [isHighlighted, setIsHighlighted] = React.useState(false);
 
   return (
     <span onMouseEnter={() => setIsHighlighted(true)} onMouseLeave={() => setIsHighlighted(false)}>
-      <ReactSocialMediaIcons 
-      icon={icon}
-      url={url}
-      borderWidth={0}
-      iconColor={(isGitHub ? (isHighlighted ? Colours.ORANGE : Colours.PURPLE) : Colours.HERO)} 
-      backgroundColor={isGitHub ? Colours.HERO : (isHighlighted ? Colours.ORANGE : Colours.PURPLE)} 
-      size={isGitHub ? 60 : 40}/>
+      <ReactSocialMediaIcons
+        icon={icon}
+        url={url}
+        borderWidth={0}
+        iconColor={(isGitHub ? (isHighlighted ? Colours.ORANGE : Colours.PURPLE) : Colours.HERO)}
+        backgroundColor={isGitHub ? Colours.HERO : (isHighlighted ? Colours.ORANGE : Colours.PURPLE)}
+        size={isGitHub ? 60 : 40} />
     </span>
   )
 }
 
 const AboutMeButton = (props) => {
-  return(
+  return (
     <button {...props}>
       More About Me
     </button>
@@ -36,7 +36,7 @@ const AboutMeButton = (props) => {
 }
 
 const ResumeButton = (props) => {
-  return(
+  return (
     <a {...props}>
       Resume
     </a>
@@ -54,9 +54,9 @@ const Navbar = () => {
               <TitleText className='text-light'>Game Programmer</TitleText>
             </Col>
             <Col className='d-flex justify-content-end align-items-center'>
-                <SocialButton icon="linkedin" url="https://www.linkedin.com/in/cai-plank/"/>
-                <SocialButton icon="github" url="https://github.com/NuiN99" isGitHub={true}/>
-                <StyledResumeAnchor href="caiplankresume.pdf" target="_blank" rel="noreferrer"/>
+              <SocialButton icon="linkedin" url="https://www.linkedin.com/in/cai-plank/" />
+              <SocialButton icon="github" url="https://github.com/NuiN99" isGitHub={true} />
+              <StyledResumeAnchor href="caiplankresume.pdf" target="_blank" rel="noreferrer" />
             </Col>
           </Row>
         </HorizontalMarginLarge>
@@ -66,12 +66,12 @@ const Navbar = () => {
 }
 
 const HeroSection = () => {
-  return(
+  return (
     <HeroColorWrapper>
       <HorizontalMarginLarge className='p-4'>
         <Row className='py-5'>
           <Col md={3}>
-            <StyledImageOrangeBorder src="profile_picture.jpg" roundedCircle fluid/>
+            <StyledImageOrangeBorder src="profile_picture.jpg" roundedCircle fluid />
           </Col>
           <Col md={6} className='text-center px-5 my-auto text-light'>
             <HeroAboutText>
@@ -89,7 +89,7 @@ const HeroSection = () => {
 }
 
 const SkillsSection = () => {
-  return(
+  return (
     <>
       <SkillsHeaderText>
         Technical Skills
@@ -108,11 +108,11 @@ const SkillsSection = () => {
               </SkillText>
             </Col>
           </Row>
-          <ProgressBar percent={skill.percent}/>
+          <ProgressBar percent={skill.percent} />
         </div>
       ))}
     </>
-  ) 
+  )
 }
 
 const ProjectsSection = () => {
@@ -128,7 +128,7 @@ const ProjectsSection = () => {
         </ProjectSectionText>
 
         <div className='container'>
-          <Row className={`justify-content-center ${gamesIsOdd ? 'justify-content-md-start' : ''}`}>
+          <Row className={`justify-content-center ${gamesIsOdd ? 'justify-content-md-start' : null}`}>
             {Projects.games.map((details, index) => (
               <Col md={6} sm={12} xs={12} key={index} className="d-flex justify-content-center">
                 <ProjectCard details={details} isGame={true}></ProjectCard>
@@ -143,7 +143,7 @@ const ProjectsSection = () => {
         </ProjectSectionText>
 
         <div className='container'>
-          <Row className={`justify-content-center ${toolsIsOdd ? 'justify-content-md-start' : ''}`}>
+          <Row className={`justify-content-center ${toolsIsOdd ? 'justify-content-md-start' : null}`}>
             {Projects.tools.map((details, index) => (
               <Col md={6} sm={12} xs={12} key={index} className="d-flex justify-content-center">
                 <ProjectCard details={details} isGame={false}></ProjectCard>
@@ -159,22 +159,22 @@ const ProjectsSection = () => {
 
 const ProjectCard = ({ details, isGame }) => {
   return (
-        <HeroColorWrapper className='flex-shrink-0 m-3 text-light rounded-2' style={{ width: '35rem' }}>
-          
-          <RelativeDiv>
-            <ProjectInfoOverlay className='px-3 py-1'>
-            </ProjectInfoOverlay>
-            <FluidVideo autoPlay loop muted playsInline className='rounded-top-2'>
-                <source src={details.src} type="video/mp4" />
-            </FluidVideo>
-          </RelativeDiv>
-            
-          <div className='m-3'>            
-            {isGame ? <GameTitleText>{details.title}</GameTitleText> : <ToolTitleText>{details.title}</ToolTitleText>}
-            <ProjectReasonText className='mb-3'>{details.reason}</ProjectReasonText>
-            <ProjectDescriptionText>{details.description}</ProjectDescriptionText>
-          </div>
-      </HeroColorWrapper >
+    <HeroColorWrapper className='flex-shrink-0 m-3 text-light rounded-2' style={{ width: '35rem' }}>
+
+      <RelativeDiv>
+        <ProjectInfoOverlay className='px-3 py-1'>
+        </ProjectInfoOverlay>
+        <FluidVideo autoPlay loop muted playsInline className='rounded-top-2'>
+          <source src={details.src} type="video/mp4" />
+        </FluidVideo>
+      </RelativeDiv>
+
+      <div className='p-3'>
+        {isGame ? <GameTitleText>{details.title}</GameTitleText> : <ToolTitleText>{details.title}</ToolTitleText>}
+        <ProjectReasonText className='mb-3'>{details.reason}</ProjectReasonText>
+        <ProjectDescriptionText>{details.description}</ProjectDescriptionText>
+      </div>
+    </HeroColorWrapper >
   )
 }
 
@@ -182,7 +182,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <HeroSection/>
+      <HeroSection />
       <ProjectsSection />
     </>
   )
@@ -249,7 +249,7 @@ const ProjectReasonText = styled.div`
   color: white;
   font-size: 1rem;
   font-weight: bold;
-` 
+`
 
 const HeroAboutText = styled.div`
   font-size: 1.25rem;
@@ -268,8 +268,8 @@ const HorizontalDividerPurple = styled.div`
 `
 
 const HorizontalMarginLarge = styled.div`
-  margin-right: 350px;
-  margin-left: 350px;
+  margin-right: 10rem;
+  margin-left: 10rem;
 `
 
 const StyledAboutMeButton = styled(AboutMeButton)`

@@ -50,7 +50,7 @@
         },
         {
             "title": "Kraken's Lair",
-            "src": "",
+            "src": "/",
             "reason": "2024 Meta Quest Hackathon submission",
             "description": "A multiplayer VR prototype that creates a stylized 3D environment based on the host's real life room that all players can move around in."
         }
@@ -58,25 +58,25 @@
     "tools": [
         {
             "title": "Scriptable Harmony",
-            "src": "",
+            "src": "/",
             "reason": "Personal project",
             "description": "An asset that uses ScriptableObjects to simplify workflows within the Unity editor, that also includes a scriptable object audio system."
         },
         {
             "title": "SpleenTween",
-            "src": "",
+            "src": "/",
             "reason": "Personal project",
             "description": "A performant tweening library for Unity that uses C# actions, allowing for smooth animations of positions and values."
         },
         {
             "title": "NExtensions",
-            "src": "",
+            "src": "/",
             "reason": "Personal project",
             "description": "A toolbox of extension and utility methods, custom classes, timers, and many more helpful tools that help speed up development time."
         },
         {
             "title": "Command Console",
-            "src": "",
+            "src": "/",
             "reason": "Personal project",
             "description": "An in game console that provides an easy way to create and input commands for cheat codes or debugging."
         }
