@@ -47,7 +47,7 @@ const Navbar = () => {
   return (
     <StickyTopWrapper>
       <HeroColorWrapper>
-        <HorizontalMarginLarge className='p-4'>
+        <HorizontalMarginLarge className='px-2 py-4'>
           <Row>
             <Col>
               <NameText>Cai Plank</NameText>
@@ -68,7 +68,7 @@ const Navbar = () => {
 const HeroSection = () => {
   return (
     <HeroColorWrapper>
-      <HorizontalMarginLarge className='p-4'>
+      <HorizontalMarginLarge className='px-3 py-4'>
         <Row className='py-5'>
           <Col md={3}>
             <StyledImageOrangeBorder src="profile_picture.jpg" roundedCircle fluid />
@@ -121,8 +121,9 @@ const ProjectsSection = () => {
 
   return (
     <BGColorWrapper>
-      <HorizontalMarginLarge className='p-4'>
-        <ProjectSectionText className='text-center px-3 mt-3'>
+      <HorizontalMarginLarge className='px-2'>
+
+        <ProjectSectionText className='text-center px-3 pt-3'>
           Games
           <HorizontalDividerOrange />
         </ProjectSectionText>
@@ -130,7 +131,7 @@ const ProjectsSection = () => {
         <div className='container'>
           <Row className={`justify-content-center ${gamesIsOdd ? 'justify-content-md-start' : null}`}>
             {Projects.games.map((details, index) => (
-              <Col md={6} sm={12} xs={12} key={index} className="d-flex justify-content-center">
+              <Col lg={6} md={12} sm={12} xs={12} key={index} className="d-flex justify-content-center">
                 <ProjectCard details={details} isGame={true}></ProjectCard>
               </Col>
             ))}
@@ -159,7 +160,7 @@ const ProjectsSection = () => {
 
 const ProjectCard = ({ details, isGame }) => {
   return (
-    <HeroColorWrapper className='flex-shrink-0 m-3 text-light rounded-2' style={{ width: '35rem' }}>
+    <HeroColorWrapper className='flex-shrink-0 m-3 w-100 text-light rounded-2'>
 
       <RelativeDiv>
         <ProjectInfoOverlay className='px-3 py-1'>
@@ -270,6 +271,21 @@ const HorizontalDividerPurple = styled.div`
 const HorizontalMarginLarge = styled.div`
   margin-right: 10rem;
   margin-left: 10rem;
+
+  @media (max-width: 1200px) {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
 `
 
 const StyledAboutMeButton = styled(AboutMeButton)`
