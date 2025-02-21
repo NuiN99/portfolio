@@ -71,7 +71,7 @@ const HeroSection = () => {
       <HorizontalMarginLarge className='px-3 py-4'>
         <Row className='py-5'>
           <Col md={3}>
-            <StyledImageOrangeBorder src="profile_picture.jpg" roundedCircle fluid />
+            <StyledImageOrangeBorder src="profile_picture.png" roundedCircle fluid />
           </Col>
           <Col md={6} className='text-center px-5 my-auto text-light'>
             <HeroAboutText>
@@ -125,7 +125,9 @@ const ProjectsSection = () => {
 
         <ProjectSectionText className='text-center px-3 pt-3'>
           Games
-          <HorizontalDividerOrange />
+          <div className="container">
+            <HorizontalDividerOrange />
+          </div>
         </ProjectSectionText>
 
         <div className='container'>
@@ -140,7 +142,9 @@ const ProjectsSection = () => {
 
         <ProjectSectionText className='text-center px-3 mt-4'>
           Systems & Tools
-          <HorizontalDividerPurple />
+          <div className="container">
+            <HorizontalDividerPurple />
+          </div>
         </ProjectSectionText>
 
         <div className='container'>
@@ -161,7 +165,6 @@ const ProjectsSection = () => {
 const ProjectCard = ({ details, isGame }) => {
   return (
     <HeroColorWrapper className='flex-shrink-0 m-3 w-100 text-light rounded-2'>
-
       <RelativeDiv>
         <ProjectInfoOverlay className='px-3 py-1'>
         </ProjectInfoOverlay>
@@ -259,14 +262,16 @@ const HeroAboutText = styled.div`
 const HorizontalDividerOrange = styled.div`
   height: 3px;
   border-radius: 3rem;
-  background-color: ${Colours.ORANGE}
-`
+  background-color: ${Colours.ORANGE};
+  width: 100%;
+`;
 
 const HorizontalDividerPurple = styled.div`
   height: 3px;
   border-radius: 3rem;
-  background-color: ${Colours.PURPLE}
-`
+  background-color: ${Colours.PURPLE};
+  width: 100%;
+`;
 
 const HorizontalMarginLarge = styled.div`
   margin-right: 10rem;
