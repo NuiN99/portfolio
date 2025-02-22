@@ -7,7 +7,7 @@
             "description": "Become a virtual reality monkey, swing around using a vine, and take revenge on the cavemen that ate your family."
         },
         {
-            "title": "Gun to the Power of Gun",
+            "title": "Gun^Gun",
             "src": "showcases/gungame_showcase_short.mp4",
             "reason": "Victoria Global Game Jam 2024 submission",
             "description": "This game allows players to attach guns they pick up onto their current gun, leading to a huge variety of gun monstrosities."
@@ -21,7 +21,7 @@
         {
             "title": "Hell NO",
             "src": "showcases/hellno_showcase_short.mp4",
-            "reason": "BIGA $5000 Mini Game Challenge submission (3rd Place Winner)",
+            "reason": "BIGA $5000 Mini Game Challenge 3rd Place Winner",
             "description": "Play as a little spirit trying to escape hell by stacking objects on top of each other, while scheming poltergeists try to knock you down."
         },
         {
@@ -40,7 +40,7 @@
             "title": "C++ Tetris",
             "src": "showcases/tetris_showcase_short.mp4",
             "reason": "Final project for ICS 214 - Programming from C to C++",
-            "description": "A Tetris clone created with C++ for the backend, and SFML for the graphics."
+            "description": "A Tetris clone created using C++ and SFML"
         },
         {
             "title": "The Hunt",
@@ -50,7 +50,7 @@
         },
         {
             "title": "Kraken's Lair",
-            "src": "/",
+            "src": "showcases/krakenslair_showcase_short.mp4",
             "reason": "2024 Meta Quest Hackathon submission",
             "description": "A multiplayer VR prototype that creates a stylized 3D environment based on the host's real life room that all players can move around in."
         }

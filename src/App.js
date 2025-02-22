@@ -328,7 +328,7 @@ const StyledResumeAnchor = styled(ResumeButton)`
 `
 
 const StyledImageOrangeBorder = styled(Image)`
-  border: 3px solid ${Colours.ORANGE};
+  border: 5px solid ${Colours.ORANGE};
 `
 
 const FluidVideo = styled.video`
