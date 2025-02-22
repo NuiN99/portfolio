@@ -60,7 +60,7 @@
             "title": "Scriptable Harmony",
             "src": "/",
             "reason": "Personal project",
-            "description": "An asset that uses ScriptableObjects to simplify workflows within the Unity editor, that also includes a scriptable object audio system."
+            "description": "A package that uses ScriptableObjects to simplify workflows within the Unity editor."
         },
         {
             "title": "SpleenTween",
