@@ -4,55 +4,55 @@
             "title": "RO:CK VR",
             "src": "showcases/rock_showcase_short.mp4",
             "reason": "Final project for COMP-246 - Advanced Simulation",
-            "description": "Become a virtual reality monkey, swing around using a vine, and take revenge on the cavemen that ate your family."
+            "description": "A virtual reality sandbox featuring active ragdolls and a physically simulated player."
         },
         {
             "title": "Gun^Gun",
             "src": "showcases/gungame_showcase_short.mp4",
             "reason": "Victoria Global Game Jam 2024 submission",
-            "description": "This game allows players to attach guns they pick up onto their current gun, leading to a huge variety of gun monstrosities."
+            "description": "With the use of a tree-like node attachment system, players can attach guns to guns and create massive gun monstrosities."
         },
         {
             "title": "Bartholomew Bone's Adventure",
             "src": "showcases/zombiegame_showcase_short.mp4",
             "reason": "Final project for COMP-245 - Artificial Intelligence",
-            "description": "A zombie adventure game featuring multiple different AI agents, four unique weapons, sliceable zombie limbs, and a final boss fight."
+            "description": "This game has four different enemies with various complex AI behaviour, including a final boss fight!"
         },
         {
             "title": "Hell NO",
             "src": "showcases/hellno_showcase_short.mp4",
             "reason": "BIGA $5000 Mini Game Challenge 3rd Place Winner",
-            "description": "Play as a little spirit trying to escape hell by stacking objects on top of each other, while scheming poltergeists try to knock you down."
+            "description": "The goal of this project was to create a simple yet polished game in one week. Our effort paid off and we got third place!"
         },
         {
             "title": "Jambulance",
             "src": "showcases/jambulance_showcase_short.mp4",
             "reason": "Ludum Dare 54 submission",
-            "description": "Navigate an ambulance through a heavy traffic jam to get your patient to the hospital before they die. Try not to explode along the way!"
+            "description": "Using various sensors, the traffic AI is programmed to act like it's escaping a city. The hectic collisions also add to the chaos."
         },
         {
             "title": "RELEASE THE MEAT",
             "src": "showcases/releasethemeat_showcase_short.mp4",
             "reason": "Ludum Dare 53 submission (Top 100)",
-            "description": "Create the perfect cart, fill it up with meat, and bring it to the end of the level while trying to keep as much meat inside as you can."
+            "description": "This was my first game jam, and although there were hiccups, in only three days I was left with a game I am very proud of."
         },
         {
             "title": "C++ Tetris",
             "src": "showcases/tetris_showcase_short.mp4",
             "reason": "Final project for ICS 214 - Programming from C to C++",
-            "description": "A Tetris clone created using C++ and SFML"
+            "description": "After learning C++ and coding small programs, I was tasked with this project, a Tetris clone created using C++ and SFML."
         },
         {
             "title": "The Hunt",
             "src": "showcases/thehunt_showcase_short.mp4",
-            "reason": "Final project for ART 155 - Digital Movement & Narrative Structures",
-            "description": "A short experience where you hunt down a mythical creature in the forest, and then become hunted yourself."
+            "reason": "Final project for ART 155 - Animation & Narrative Structures",
+            "description": "A short narrative experience. I designed the assets, terrain, and lighting, as well as an editor tool to speed up tree placement."
         },
         {
             "title": "Kraken's Lair",
             "src": "showcases/krakenslair_showcase_short.mp4",
             "reason": "2024 Meta Quest Hackathon submission",
-            "description": "A multiplayer VR prototype that creates a stylized 3D environment based on the host's real life room that all players can move around in."
+            "description": "A multiplayer VR prototype that creates a 3D environment based on the host's real life room that all players can move around in."
         }
     ],
     "tools": [
@@ -60,25 +60,25 @@
             "title": "Scriptable Harmony",
             "src": "/",
             "reason": "Personal project",
-            "description": "A package that uses ScriptableObjects to simplify workflows within the Unity editor."
+            "description": "A package that uses ScriptableObjects to simplify and speed up workflows within the Unity editor."
         },
         {
             "title": "SpleenTween",
             "src": "/",
             "reason": "Personal project",
-            "description": "A performant tweening library for Unity that uses C# actions, allowing for smooth animations of positions and values."
+            "description": "A performant tweening library for Unity that uses C# callbacks, allowing for smooth animations of positions and values."
         },
         {
             "title": "NExtensions",
             "src": "/",
             "reason": "Personal project",
-            "description": "A toolbox of extension and utility methods, custom classes, timers, and many more helpful tools that help speed up development time."
+            "description": "A toolbox of extension methods, custom classes, timers, and other helpful tools to speed up development."
         },
         {
             "title": "Command Console",
             "src": "/",
             "reason": "Personal project",
-            "description": "An in game console that provides an easy way to create and input commands for cheat codes or debugging."
+            "description": "An in game console that provides an easy way to create and input commands for cheat codes and/or debugging."
         }
     ]
 }
