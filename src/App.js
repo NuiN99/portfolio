@@ -150,7 +150,7 @@ const ProjectsSection = () => {
         <div className='container'>
           <Row className={`justify-content-center ${toolsIsOdd ? 'justify-content-md-start' : null}`}>
             {Projects.tools.map((details, index) => (
-              <Col md={6} sm={12} xs={12} key={index} className="d-flex justify-content-center">
+              <Col lg={6} md={12} sm={12} xs={12} key={index} className="d-flex justify-content-center">
                 <ProjectCard details={details} isGame={false}></ProjectCard>
               </Col>
             ))}
