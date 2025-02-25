@@ -52,7 +52,7 @@
             "title": "Kraken's Lair",
             "src": "showcases/krakenslair_showcase_short.mp4",
             "reason": "2024 Meta Quest Hackathon submission",
-            "description": "A multiplayer VR prototype that creates a 3D environment based on the host's real life room that all players can move around in."
+            "description": "A VR prototype created using various Quest 3 SDK's. The game constructs a 3D mesh from the host's real life room data that all players can move around in."
         }
     ],
     "tools": [
@@ -60,13 +60,13 @@
             "title": "Scriptable Harmony",
             "src": "/",
             "reason": "Personal project",
-            "description": "A package that uses ScriptableObjects to simplify and speed up workflows within the Unity editor."
+            "description": "A package that uses ScriptableObjects to speed up and simplify workflows within the Unity editor."
         },
         {
             "title": "SpleenTween",
-            "src": "/",
+            "src": "showcases/spleentween_showcase_short.mp4",
             "reason": "Personal project",
-            "description": "A performant tweening library for Unity that uses C# callbacks, allowing for smooth animations of positions and values."
+            "description": "A performant tweening library for Unity that uses C# callbacks. Its simple interface makes it easy to smoothly interpolate between positions and values."
         },
         {
             "title": "NExtensions",
@@ -76,9 +76,9 @@
         },
         {
             "title": "Command Console",
-            "src": "/",
+            "src": "showcases/commandconsole_showcase_short.mp4",
             "reason": "Personal project",
-            "description": "An in game console that provides an easy way to create and input commands for cheat codes and/or debugging."
+            "description": "An in game debug console for Unity. Commands are created via a custom attribute above the method, and are found automatically via reflection."
         }
     ]
 }
