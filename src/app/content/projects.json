@@ -57,10 +57,10 @@
     ],
     "tools": [
         {
-            "title": "Scriptable Harmony",
-            "src": "showcases/scriptableharmony_showcase_short.mp4",
+            "title": "Command Console",
+            "src": "showcases/commandconsole_showcase_short.mp4",
             "reason": "Personal project",
-            "description": "A package that uses ScriptableObjects to decouple code and streamline workflows in Unity, inspired by Ryan Hipple's Unite 2017 talk."
+            "description": "An in game debug console for Unity. Commands are created via a custom attribute above a method, and are found automatically via reflection."
         },
         {
             "title": "SpleenTween",
@@ -69,16 +69,16 @@
             "description": "A performant tweening library for Unity that uses C# callbacks. Its simple interface makes it easy to smoothly interpolate between values."
         },
         {
-            "title": "NExtensions",
-            "src": "/",
+            "title": "Scriptable Harmony",
+            "src": "showcases/scriptableharmony_showcase_short.mp4",
             "reason": "Personal project",
-            "description": "A toolbox of extension methods, custom classes, timers, and other helpful tools to speed up development."
+            "description": "A package that uses ScriptableObjects to decouple code and streamline workflows in Unity, inspired by Ryan Hipple's Unite 2017 talk."
         },
         {
-            "title": "Command Console",
-            "src": "showcases/commandconsole_showcase_short.mp4",
+            "title": "NExtensions",
+            "src": "showcases/nextensions_showcase_short.mp4",
             "reason": "Personal project",
-            "description": "An in game debug console for Unity. Commands are created via a custom attribute above a method, and are found automatically via reflection."
+            "description": "A toolbox of extension methods, custom classes, timers, and other helpful tools to speed up development."
         }
     ]
 }
