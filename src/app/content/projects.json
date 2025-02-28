@@ -47,12 +47,6 @@
             "src": "showcases/tetris_showcase_short.mp4",
             "reason": "Final Project | ICS 214 - Programming from C to C++",
             "description": "After learning C++ and coding small programs, I was tasked with this project, a Tetris clone created using C++ and SFML."
-        },
-        {
-            "title": "The Hunt",
-            "src": "showcases/thehunt_showcase_short.mp4",
-            "reason": "Final Project | ART 155 - Digital Movement & Narrative Structures",
-            "description": "A short narrative experience. I designed the assets, terrain, and lighting, as well as an editor tool to speed up tree placement."
         }
     ],
     "tools": [
