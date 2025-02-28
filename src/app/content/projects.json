@@ -3,70 +3,70 @@
         {
             "title": "RO:CK VR",
             "src": "showcases/rock_showcase_short.mp4",
-            "reason": "Final project for COMP-246 - Advanced Simulation",
-            "description": "A virtual reality sandbox featuring active ragdolls and a physically simulated player."
+            "reason": "Final Project | COMP-246 - Advanced Simulation",
+            "description": "A virtual reality combat sandbox featuring active ragdolls and a physically simulated player."
         },
         {
             "title": "Gun^Gun",
             "src": "showcases/gungame_showcase_short.mp4",
-            "reason": "Victoria Global Game Jam 2024 submission",
+            "reason": "Submission | Victoria Global Game Jam 2024",
             "description": "With the use of a tree-like node attachment system, players can attach guns to guns and create massive gun monstrosities."
         },
         {
             "title": "Bartholomew Bone's Adventure",
             "src": "showcases/zombiegame_showcase_short.mp4",
-            "reason": "Final project for COMP-245 - Artificial Intelligence",
-            "description": "This game has four different enemies with various complex AI behaviour, including a final boss fight!"
+            "reason": "Final Project | COMP-245 - Artificial Intelligence",
+            "description": "This game has four enemy types with different AI behaviour, including a final boss fight."
         },
         {
             "title": "Hell NO",
             "src": "showcases/hellno_showcase_short.mp4",
-            "reason": "BIGA $5000 Mini Game Challenge 3rd Place Winner",
+            "reason": "3rd Place Winner | BIGA $5000 Mini Game Challenge",
             "description": "The goal of this project was to create a simple yet polished game in one week. Our effort paid off and we got third place!"
         },
         {
             "title": "Jambulance",
             "src": "showcases/jambulance_showcase_short.mp4",
-            "reason": "Ludum Dare 54 submission",
-            "description": "Using various sensors, the traffic AI is programmed to act like it's escaping a city. The hectic collisions also add to the chaos."
+            "reason": "Submission | Ludum Dare 54 Game Jam",
+            "description": "Using various sensors, the traffic is programmed to feel as though all of the cars are escaping a city."
         },
         {
             "title": "RELEASE THE MEAT",
             "src": "showcases/releasethemeat_showcase_short.mp4",
-            "reason": "Ludum Dare 53 submission (Top 100)",
+            "reason": "Top 100 Submission | Ludum Dare 53 Game Jam",
             "description": "This was my first game jam, and although there were hiccups, in only three days I was left with a game I am very proud of."
         },
         {
             "title": "C++ Tetris",
             "src": "showcases/tetris_showcase_short.mp4",
-            "reason": "Final project for ICS 214 - Programming from C to C++",
+            "reason": "Final Project | ICS 214 - Programming from C to C++",
             "description": "After learning C++ and coding small programs, I was tasked with this project, a Tetris clone created using C++ and SFML."
         },
         {
             "title": "The Hunt",
             "src": "showcases/thehunt_showcase_short.mp4",
-            "reason": "Final project for ART 155 - Animation & Narrative Structures",
+            "reason": "Final Project | ART 155 - Digital Movement & Narrative Structures",
             "description": "A short narrative experience. I designed the assets, terrain, and lighting, as well as an editor tool to speed up tree placement."
         },
         {
             "title": "Kraken's Lair",
             "src": "showcases/krakenslair_showcase_short.mp4",
-            "reason": "2024 Meta Quest Hackathon submission",
+            "reason": "Submission | 2024 Meta Quest Hackathon",
             "description": "A VR prototype created using various Quest 3 SDK's. The game constructs a 3D mesh from the host's real life room data that all players can move around in."
         }
     ],
     "tools": [
         {
             "title": "Scriptable Harmony",
-            "src": "/",
+            "src": "showcases/scriptableharmony_showcase_short.mp4",
             "reason": "Personal project",
-            "description": "A package that uses ScriptableObjects to speed up and simplify workflows within the Unity editor."
+            "description": "A package that uses ScriptableObjects to decouple code and streamline workflows in Unity, inspired by Ryan Hipple's Unite 2017 talk."
         },
         {
             "title": "SpleenTween",
             "src": "showcases/spleentween_showcase_short.mp4",
             "reason": "Personal project",
-            "description": "A performant tweening library for Unity that uses C# callbacks. Its simple interface makes it easy to smoothly interpolate between positions and values."
+            "description": "A performant tweening library for Unity that uses C# callbacks. Its simple interface makes it easy to smoothly interpolate between values."
         },
         {
             "title": "NExtensions",
@@ -78,7 +78,7 @@
             "title": "Command Console",
             "src": "showcases/commandconsole_showcase_short.mp4",
             "reason": "Personal project",
-            "description": "An in game debug console for Unity. Commands are created via a custom attribute above the method, and are found automatically via reflection."
+            "description": "An in game debug console for Unity. Commands are created via a custom attribute above a method, and are found automatically via reflection."
         }
     ]
 }

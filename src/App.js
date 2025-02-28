@@ -167,6 +167,7 @@ const ProjectCard = ({ details, isGame }) => {
     <HeroColorWrapper className='flex-shrink-0 m-3 w-100 text-light rounded-2'>
       <RelativeDiv>
         <ProjectInfoOverlay className='px-3 py-1'>
+          
         </ProjectInfoOverlay>
         <FluidVideo autoPlay loop muted playsInline className='rounded-top-2'>
           <source src={details.src} type="video/mp4" />
@@ -320,6 +321,7 @@ const StyledResumeAnchor = styled(ResumeButton)`
     text-decoration: none;
     display: inline-block;
     font-size: 1rem;
+    font-weight: bold;
 
     &:hover {
       border: 3px solid ${Colours.ORANGE};
