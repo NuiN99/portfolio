@@ -19,6 +19,12 @@
             "description": "This game has four enemy types with different AI behaviour, including a final boss fight."
         },
         {
+            "title": "Kraken's Lair",
+            "src": "showcases/krakenslair_showcase_short.mp4",
+            "reason": "Submission | 2024 Meta Quest Hackathon",
+            "description": "A VR prototype created using various Quest 3 SDK's. The game constructs a 3D mesh from the host's real life room data that all players can move around in."
+        },
+        {
             "title": "Hell NO",
             "src": "showcases/hellno_showcase_short.mp4",
             "reason": "3rd Place Winner | BIGA $5000 Mini Game Challenge",
@@ -47,12 +53,6 @@
             "src": "showcases/thehunt_showcase_short.mp4",
             "reason": "Final Project | ART 155 - Digital Movement & Narrative Structures",
             "description": "A short narrative experience. I designed the assets, terrain, and lighting, as well as an editor tool to speed up tree placement."
-        },
-        {
-            "title": "Kraken's Lair",
-            "src": "showcases/krakenslair_showcase_short.mp4",
-            "reason": "Submission | 2024 Meta Quest Hackathon",
-            "description": "A VR prototype created using various Quest 3 SDK's. The game constructs a 3D mesh from the host's real life room data that all players can move around in."
         }
     ],
     "tools": [
