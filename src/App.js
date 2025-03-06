@@ -68,18 +68,21 @@ const Navbar = () => {
 const HeroSection = () => {
   return (
     <HeroColorWrapper>
-      <HorizontalMarginLarge className='px-3 py-4'>
-        <Row className='py-5'>
-          <Col md={3}>
+      <HorizontalMarginLarge className='px-3 py-0'>
+        <Row className='pb-4 pb-lg-5 pt-lg-3'>
+
+          <Col lg={3} md={6} className="d-flex align-items-center justify-content-center order-1 order-md-1 order-lg-1">
             <StyledImageOrangeBorder src="profile_picture.png" roundedCircle fluid />
           </Col>
-          <Col md={6} className='text-center px-5 my-auto text-light'>
+
+          <Col lg={6} className='pt-5 pb-md-0 pt-md-5 px-lg-5 text-center my-auto text-light order-3 order-md-3 order-lg-2'>
             <HeroAboutText>
               {AboutMeContent.hero}
             </HeroAboutText>
             <StyledAboutMeButton className='mt-3' />
           </Col>
-          <Col md={3} className='my-auto text-light'>
+
+          <Col lg={3} md={6} className='my-auto pt-5 pt-md-0 pt-lg-0 text-light order-2 order-md-2 order-lg-3'>
             <SkillsSection />
           </Col>
         </Row>
@@ -197,15 +200,16 @@ const BGColorWrapper = styled.div`
 `
 
 const NameText = styled.div`
-  font-size: 4rem;
+  font-size: clamp(2rem, 6vw, 4rem); /* Scales between 2rem and 4rem based on screen width */
   font-weight: bold;
   color: ${Colours.ORANGE};
   line-height: 1em;
-`
+`;
 
 const TitleText = styled.div`
-  font-size: 1.5rem;
-`
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: white;
+`;
 
 const ProjectSectionText = styled.div`
   font-size: 2rem;
@@ -245,7 +249,7 @@ const ProjectReasonText = styled.div`
 `
 
 const HeroAboutText = styled.div`
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
 `
 
 const HorizontalDividerOrange = styled.div`
@@ -319,7 +323,9 @@ const StyledResumeAnchor = styled(ResumeButton)`
 
 const StyledImageOrangeBorder = styled(Image)`
   border: 5px solid ${Colours.ORANGE};
-`
+  width: clamp(300px, 20vw, 100%);
+  height: auto;
+`;
 
 const FluidVideo = styled.video`
   width: 100%;
