@@ -1,6 +1,12 @@
 {
     "games": [
         {
+            "title": "BeetleBall",
+            "src": "showcases/beetleball_showcase_short.mp4",
+            "reason": "Current Project & Future Steam Release",
+            "description": "BeetleBall is an online multiplayer soccer game with multiple unique beetle classes. My team and I will be releasing it to Steam in 2025."
+        },
+        {
             "title": "RO:CK VR",
             "src": "showcases/rock_showcase_short.mp4",
             "reason": "Final Project | COMP-246 - Advanced Simulation",
@@ -11,6 +17,12 @@
             "src": "showcases/gungame_showcase_short.mp4",
             "reason": "Submission | Victoria Global Game Jam 2024",
             "description": "With the use of a tree-like node attachment system, players can attach guns to guns and create massive gun monstrosities."
+        },
+        {
+            "title": "Big Beautiful Balloon",
+            "src": "showcases/bigbeautifulballoon_showcase_short.mp4",
+            "reason": "Submission | Orca Jam 2024",
+            "description": "I programmed the balloon movement and physics to feel like a real balloon and it turned out amazing. I also designed the level, which was a fun challenge!"
         },
         {
             "title": "Bartholomew Bone's Adventure",

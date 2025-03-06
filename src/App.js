@@ -116,50 +116,38 @@ const SkillsSection = () => {
 }
 
 const ProjectsSection = () => {
-  const gamesIsOdd = Projects.games.length % 2 !== 0;
-  const toolsIsOdd = Projects.tools.length % 2 !== 0;
-
   return (
     <BGColorWrapper>
       <HorizontalMarginLarge className='px-2'>
-
-        <ProjectSectionText className='text-center px-3 pt-3'>
-          Games
-          <div className="container">
-            <HorizontalDividerOrange />
-          </div>
-        </ProjectSectionText>
-
-        <div className='container'>
-          <Row className={`justify-content-center ${gamesIsOdd ? 'justify-content-md-start' : null}`}>
-            {Projects.games.map((details, index) => (
-              <Col lg={6} md={12} sm={12} xs={12} key={index} className="d-flex justify-content-center">
-                <ProjectCard details={details} isGame={true}></ProjectCard>
-              </Col>
-            ))}
-          </Row>
-        </div>
-
-        <ProjectSectionText className='text-center px-3 mt-4'>
-          Systems & Tools
-          <div className="container">
-            <HorizontalDividerPurple />
-          </div>
-        </ProjectSectionText>
-
-        <div className='container'>
-          <Row className={`justify-content-center ${toolsIsOdd ? 'justify-content-md-start' : null}`}>
-            {Projects.tools.map((details, index) => (
-              <Col lg={6} md={12} sm={12} xs={12} key={index} className="d-flex justify-content-center">
-                <ProjectCard details={details} isGame={false}></ProjectCard>
-              </Col>
-            ))}
-          </Row>
-        </div>
-
+        <ProjectsGrid isGameSection={true}/>
+        <ProjectsGrid isGameSection={false}/>
       </HorizontalMarginLarge>
     </BGColorWrapper>
   );
+}
+
+const ProjectsGrid = ({ isGameSection }) => {
+  const projectsArray = isGameSection ? Projects.games : Projects.tools;
+  return (
+    <>
+      <ProjectSectionText className='text-center px-3 pt-3'>
+        {isGameSection ? "Games" : "Systems & Tools"}
+        <div className="container">
+          {isGameSection ? <HorizontalDividerOrange /> : <HorizontalDividerPurple />}
+        </div>
+      </ProjectSectionText>
+
+      <div className='container'>
+        <Row className={'justify-content-start'}>
+          {projectsArray.map((details, index) => (
+            <Col lg={6} md={12} sm={12} xs={12} key={index} className="d-flex justify-content-center">
+              <ProjectCard details={details} isGame={isGameSection}></ProjectCard>
+            </Col>
+          ))}
+        </Row>
+      </div>
+    </>
+  )
 }
 
 const ProjectCard = ({ details, isGame }) => {
