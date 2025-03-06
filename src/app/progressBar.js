@@ -1,5 +1,5 @@
 import React from 'react';
-import Colours from '../colours';
+import Colours from './content/colours.js';
 
 const ProgressBar = ({ percent }) => {
   return (
