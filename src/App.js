@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
 import { Row, Col, Card, Button } from 'react-bootstrap';
-import Colours from './colours.js';
+import Colours from './app/content/colours.js';
 import Projects from './app/content/projects.json';
 import Skills from './app/content/skills.json';
 import AboutMeContent from './app/content/aboutme.json';
