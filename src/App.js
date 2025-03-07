@@ -49,11 +49,11 @@ const Navbar = () => {
       <HeroColorWrapper>
         <HorizontalMarginLarge className='px-2 py-4'>
           <Row>
-            <Col>
+            <Col className='col-7'>
               <NameText>Cai Plank</NameText>
               <TitleText className='text-light'>Game Programmer</TitleText>
             </Col>
-            <Col className='d-flex justify-content-end align-items-center'>
+            <Col className='col-5 d-flex justify-content-end align-items-center'>
               <SocialButton icon="linkedin" url="https://www.linkedin.com/in/cai-plank/" />
               <SocialButton icon="github" url="https://github.com/NuiN99" isGitHub={true} />
               <StyledResumeAnchor href="caiplankresume.pdf" target="_blank" rel="noreferrer" />
@@ -200,7 +200,7 @@ const BGColorWrapper = styled.div`
 `
 
 const NameText = styled.div`
-  font-size: clamp(2rem, 6vw, 4rem); /* Scales between 2rem and 4rem based on screen width */
+  font-size: clamp(2rem, 6vw, 4rem);
   font-weight: bold;
   color: ${Colours.ORANGE};
   line-height: 1em;
@@ -337,7 +337,7 @@ const ProjectInfoOverlay = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
   color: white; 
   bottom: 6px;
-  width: 100%; /* Fill the width of the parent */
+  width: 100%;
 `
 
 const RelativeDiv = styled.div`
