@@ -4,61 +4,121 @@
             "title": "BeetleBall",
             "src": "showcases/beetleball_showcase_short.mp4",
             "reason": "Current Project & Future Steam Release",
-            "description": "BeetleBall is an online multiplayer soccer game with multiple unique beetle classes. My team and I will be releasing it to Steam in 2025."
+            "description": "BeetleBall is an online multiplayer soccer game with multiple unique beetle classes. My team and I will be releasing it to Steam in 2025.",
+            "labels":{
+                "role": "Lead Programmer",
+                "tools": "Unity/C#",
+                "team": "8",
+                "duration": "3 months"
+            }
         },
         {
             "title": "RO:CK VR",
             "src": "showcases/rock_showcase_short.mp4",
             "reason": "Final Project | COMP-246 - Advanced Simulation",
-            "description": "A virtual reality combat sandbox featuring active ragdolls and a physically simulated player."
+            "description": "A virtual reality combat sandbox featuring active ragdolls and a physically simulated player.",
+            "labels":{
+                "role": "Project Lead/Programmer",
+                "tools": "Unity/C#",
+                "team": "4",
+                "duration": "2 weeks"
+            }
         },
         {
             "title": "Gun^Gun",
             "src": "showcases/gungame_showcase_short.mp4",
             "reason": "Submission | Victoria Global Game Jam 2024",
-            "description": "With the use of a tree-like node attachment system, players can attach guns to guns and create massive gun monstrosities."
+            "description": "With the use of a tree-like node attachment system, players can attach guns to guns and create massive gun monstrosities.",
+            "labels":{
+                "role": "Lead Programmer",
+                "tools": "Unity/C#",
+                "team": "4",
+                "duration": "3 days"
+            }
         },
         {
             "title": "Big Beautiful Balloon",
             "src": "showcases/bigbeautifulballoon_showcase_short.mp4",
             "reason": "Submission | Orca Jam 2024",
-            "description": "I programmed the balloon movement and physics to feel like a real balloon and it turned out amazing. I also designed the level, which was a fun challenge!"
+            "description": "I programmed the balloon movement and physics to feel like a real balloon and it turned out amazing. I also designed the level, which was a fun challenge!",
+            "labels":{
+                "role": "Lead Programmer",
+                "tools": "Unity/C#",
+                "team": "7",
+                "duration": "3 days"
+            }
         },
         {
             "title": "Bartholomew Bone's Adventure",
             "src": "showcases/zombiegame_showcase_short.mp4",
             "reason": "Final Project | COMP-245 - Artificial Intelligence",
-            "description": "This game has four enemy types with different AI behaviour, including a final boss fight."
+            "description": "This game has four enemy types with different AI behaviour, including a final boss fight.",
+            "labels":{
+                "role": "Lead Programmer",
+                "tools": "Unity/C#",
+                "team": "5",
+                "duration": "2 weeks"
+            }
         },
         {
             "title": "Kraken's Lair",
             "src": "showcases/krakenslair_showcase_short.mp4",
             "reason": "Submission | 2024 Meta Quest Hackathon",
-            "description": "A VR prototype created using various Quest 3 SDK's. The game constructs a 3D mesh from the host's real life room data that all players can move around in."
+            "description": "A VR prototype created using various Quest 3 SDK's. The game constructs a 3D mesh from the host's real life room data that all players can move around in.",
+            "labels":{
+                "role": "Programmer",
+                "tools": "Unity/C#",
+                "team": "2",
+                "duration": "2 weeks"
+            }
         },
         {
             "title": "Hell NO",
             "src": "showcases/hellno_showcase_short.mp4",
             "reason": "3rd Place Winner | BIGA $5000 Mini Game Challenge",
-            "description": "The goal of this project was to create a simple yet polished game in one week. Our effort paid off and we got third place!"
+            "description": "The goal of this project was to create a simple yet polished game in one week. Our effort paid off and we got third place!",
+            "labels":{
+                "role": "Lead Programmer",
+                "tools": "Unity/C#",
+                "team": "5",
+                "duration": "1 week"
+            }
         },
         {
             "title": "Jambulance",
             "src": "showcases/jambulance_showcase_short.mp4",
             "reason": "Submission | Ludum Dare 54 Game Jam",
-            "description": "Using various sensors, the traffic is programmed to feel as though all of the cars are escaping a city."
+            "description": "Using various sensors, the traffic is programmed to feel as though all of the cars are escaping a city.",
+            "labels":{
+                "role": "Programmer",
+                "tools": "Unity/C#",
+                "team": "4",
+                "duration": "3 days"
+            }
         },
         {
             "title": "RELEASE THE MEAT",
             "src": "showcases/releasethemeat_showcase_short.mp4",
             "reason": "Top 100 Submission | Ludum Dare 53 Game Jam",
-            "description": "This was my first game jam, and although there were hiccups, in only three days I was left with a game I am very proud of."
+            "description": "This was my first game jam, and although there were hiccups, in only three days I was left with a game I am very proud of.",
+            "labels":{
+                "role": "Developer",
+                "tools": "Unity/C#",
+                "team": "1",
+                "duration": "3 days"
+            }
         },
         {
             "title": "C++ Tetris",
             "src": "showcases/tetris_showcase_short.mp4",
             "reason": "Final Project | ICS 214 - Programming from C to C++",
-            "description": "After learning C++ and coding small programs, I was tasked with this project, a Tetris clone created using C++ and SFML."
+            "description": "After learning C++ and coding small programs, I was tasked with this project, a Tetris clone created using C++ and SFML.",
+            "labels":{
+                "role": "Developer",
+                "tools": "SFML/C++",
+                "team": "1",
+                "duration": "3 days"
+            }
         }
     ],
     "tools": [
@@ -66,25 +126,49 @@
             "title": "Command Console",
             "src": "showcases/commandconsole_showcase_short.mp4",
             "reason": "Personal project",
-            "description": "An in game debug console for Unity. Commands are created via a custom attribute above a method, and are found automatically via reflection."
+            "description": "An in game debug console for Unity. Commands are created via a custom attribute above a method, and are found automatically via reflection.",
+            "labels":{
+                "role": "Developer",
+                "tools": "Unity/C#",
+                "team": "1",
+                "duration": "1 week"
+            }
         },
         {
             "title": "SpleenTween",
             "src": "showcases/spleentween_showcase_short.mp4",
             "reason": "Personal project",
-            "description": "A performant tweening library for Unity that uses C# callbacks. Its simple interface makes it easy to smoothly interpolate between values."
+            "description": "A performant tweening library for Unity that uses C# callbacks. Its simple interface makes it easy to smoothly interpolate between values.",
+            "labels":{
+                "role": "Developer",
+                "tools": "Unity/C#",
+                "team": "1",
+                "duration": "1 month"
+            }
         },
         {
             "title": "Scriptable Harmony",
             "src": "showcases/scriptableharmony_showcase_short.mp4",
             "reason": "Personal project",
-            "description": "A package that uses ScriptableObjects to decouple code and streamline workflows in Unity, inspired by Ryan Hipple's Unite 2017 talk."
+            "description": "A package that uses ScriptableObjects to decouple code and streamline workflows in Unity, inspired by Ryan Hipple's Unite 2017 talk.",
+            "labels":{
+                "role": "Developer",
+                "tools": "Unity/C#",
+                "team": "1",
+                "duration": "2 months"
+            }
         },
         {
             "title": "NExtensions",
             "src": "showcases/nextensions_showcase_short.mp4",
             "reason": "Personal project",
-            "description": "A toolbox of extension methods, custom classes, timers, and other helpful tools to speed up development."
+            "description": "A toolbox of extension methods, custom classes, timers, and other helpful tools to speed up development.",
+            "labels":{
+                "role": "Developer",
+                "tools": "Unity/C#",
+                "team": "1",
+                "duration": "1 week"
+            }
         }
     ]
 }
