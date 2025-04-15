@@ -1,32 +1,23 @@
 [
     {
-        "name": "Unity",
-        "percent": 100,
-        "proficiency": "Advanced"
+        "name": "Unity"
     },
     {
-        "name": "C#",
-        "percent": 100,
-        "proficiency": "Advanced"
+        "name": "Netcode"
     },
     {
-        "name": "GitHub",
-        "percent": 100,
-        "proficiency": "Advanced"
+        "name": "C#"
     },
     {
-        "name": "P4V",
-        "percent": 66,
-        "proficiency": "Proficient"
+        "name": "C++"
     },
     {
-        "name": "C++",
-        "percent": 66,
-        "proficiency": "Proficient"
+        "name": "JavaScript"
     },
     {
-        "name": "JavaScript",
-        "percent": 66,
-        "proficiency": "Proficient"
-    }
+        "name": "GitHub"
+    },
+    {
+        "name": "P4V"
+    }    
 ]
