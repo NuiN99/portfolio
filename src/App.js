@@ -38,7 +38,7 @@ const AboutMeButton = (props) => {
 const ResumeButton = (props) => {
   return (
     <a {...props}>
-      Resume
+      Resumé
     </a>
   )
 }
@@ -69,21 +69,20 @@ const HeroSection = () => {
   return (
     <HeroColorWrapper>
       <HorizontalMarginLarge className='px-3 py-0'>
-        <Row className='pb-4 pb-lg-5 pt-lg-3'>
-          <Col lg={3} md={6} className="d-flex align-items-center justify-content-center order-1 order-md-1 order-lg-1">
-            <StyledImageOrangeBorder src="profile_picture.png" roundedCircle fluid />
+        <Row className='pb-4 mx-auto d-flex justify-content-center'>
+          <Col lg={4} md={5} className="d-flex align-items-center justify-content-center">
+            <StyledImageOrangeBorder src="portrait.jpg" roundedCircle fluid />
           </Col>
 
-          <Col lg={6} className='pt-4 pb-md-0 pt-md-4 px-lg-4 text-center my-auto text-light order-3 order-md-3 order-lg-2'>
+          <Col lg={6} md={7} className='pt-3 text-center my-auto text-light'>
             <HeroAboutText>
               {AboutMeContent.hero}
             </HeroAboutText>
             <StyledAboutMeButton className='mt-3' />
           </Col>
-
-          <Col lg={3} md={6} className='my-auto pt-4 pt-md-0 pt-lg-0 text-light order-2 order-md-2 order-lg-3'>
+          <div className='my-auto text-center pt-4 text-light'>
             <SkillsSection />
-          </Col>
+          </div>
         </Row>
       </HorizontalMarginLarge>
     </HeroColorWrapper>
@@ -93,25 +92,10 @@ const HeroSection = () => {
 const SkillsSection = () => {
   return (
     <>
-      <SkillsHeaderText>
-        Technical Skills
-      </SkillsHeaderText>
       {Skills.map((skill, index) => (
-        <div className='my-2' key={index}>
-          <Row>
-            <Col>
-              <SkillText>
-                {skill.name}
-              </SkillText>
-            </Col>
-            <Col className='text-end'>
-              <SkillText>
-                {skill.proficiency}
-              </SkillText>
-            </Col>
-          </Row>
-          <ProgressBar percent={skill.percent} />
-        </div>
+        <SkillLabel key={index} className='m-1'>
+          {skill.name}
+        </SkillLabel>
       ))}
     </>
   )
@@ -159,9 +143,14 @@ const ProjectCard = ({ details, isGame }) => {
         <ProjectInfoOverlay className='px-3 py-1'>
           
         </ProjectInfoOverlay>
-        <FluidVideo autoPlay loop muted playsInline className='rounded-top-2'>
-          <source src={details.src} type="video/mp4" />
-        </FluidVideo>
+        
+        <ResponsiveIframe
+          src={`https://www.youtube.com/embed/${details.src}?autoplay=1&mute=1&controls=0&loop=1&playlist=${details.src}&modestbranding=1&showinfo=0&rel=0`}
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+          title="Embedded YouTube video"
+        />
+
       </RelativeDiv>
 
       <div className='p-3'>
@@ -216,12 +205,15 @@ const ProjectSectionText = styled.div`
   color: white;
 `
 
-const SkillsHeaderText = styled.div`
-  font-size: 1.25rem;
-  font-weight: bold;
-`
-
-const SkillText = styled.div`
+const SkillLabel = styled.div`
+  background-color: ${Colours.HERO};
+  border: 3px solid ${Colours.ORANGE};
+  border-radius: 1rem;
+  color: white;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: 1rem;
 `
 
@@ -286,28 +278,11 @@ const HorizontalMarginLarge = styled.div`
 `
 
 const StyledAboutMeButton = styled(AboutMeButton)`
-    background-color: ${Colours.HERO};
-    border: 4px solid ${Colours.PURPLE};
-    border-radius: 2rem;
-    color: white;
+    background-color: ${Colours.PURPLE};
+    border: 0px solid white;
+    border-radius: 10rem;
+    color: ${Colours.HERO};
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-
-    &:hover {
-      border: 4px solid ${Colours.ORANGE};
-      color: ${Colours.ORANGE};
-    }
-`
-
-const StyledResumeAnchor = styled(ResumeButton)`
-    background-color: ${Colours.HERO};
-    border: 3px solid ${Colours.PURPLE};
-    border-radius: 0.5rem;
-    color: ${Colours.PURPLE};
-    padding: 6px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -315,8 +290,23 @@ const StyledResumeAnchor = styled(ResumeButton)`
     font-weight: bold;
 
     &:hover {
-      border: 3px solid ${Colours.ORANGE};
-      color: ${Colours.ORANGE};
+      background-color: ${Colours.ORANGE};
+    }
+`
+
+const StyledResumeAnchor = styled(ResumeButton)`
+    background-color: ${Colours.PURPLE};
+    border-radius: 10rem;
+    color: ${Colours.HERO};
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+
+    &:hover {
+      background-color: ${Colours.ORANGE};
     }
 `
 
@@ -330,6 +320,15 @@ const FluidVideo = styled.video`
   width: 100%;
   height: auto;
 `
+
+const ResponsiveIframe = styled.iframe`
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  pointer-events: none;
+`;
 
 const ProjectInfoOverlay = styled.div`
   position: absolute;
