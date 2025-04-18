@@ -71,7 +71,7 @@ const HeroSection = () => {
       <HorizontalMarginLarge className='px-3 py-0'>
         <Row className='pb-4 mx-auto d-flex justify-content-center'>
           <Col lg={4} md={5} className="d-flex align-items-center justify-content-center">
-            <StyledImageOrangeBorder src="portrait.jpg" roundedCircle fluid />
+            <StyledPortrait src="portrait.jpg" fluid />
           </Col>
 
           <Col lg={6} md={7} className='pt-3 text-center my-auto text-light'>
@@ -80,7 +80,7 @@ const HeroSection = () => {
             </HeroAboutText>
             <StyledAboutMeButton className='mt-3' />
           </Col>
-          <div className='my-auto text-center pt-5 text-light'>
+          <div className='my-auto text-center pt-4 text-light'>
             <SkillsSection />
           </div>
         </Row>
@@ -140,12 +140,7 @@ const ProjectCard = ({ details, isGame }) => {
   return (
     <HeroColorWrapper className='flex-shrink-0 m-3 w-100 text-light rounded-2'>
       <RelativeDiv>
-        <ProjectInfoOverlay className='px-3 py-1 d-flex align-items-center'>
-          <ProjectLabel type="team" text={details.labels.team}></ProjectLabel>
-          <ProjectLabel type="duration" text={details.labels.duration}></ProjectLabel>
-          <ProjectLabel type="tools" text={details.labels.tools}></ProjectLabel>
-        </ProjectInfoOverlay>
-        
+    
         <ResponsiveIframe
           src={`https://www.youtube.com/embed/${details.src}?autoplay=1&mute=1&controls=0&loop=1&playlist=${details.src}&modestbranding=1&showinfo=0&rel=0`}
           allow="autoplay; encrypted-media"
@@ -153,12 +148,20 @@ const ProjectCard = ({ details, isGame }) => {
           title="Embedded YouTube video"
           sandbox="allow-same-origin allow-scripts allow-presentation"
         />
-
       </RelativeDiv>
 
       <div className='p-3'>
         {isGame ? <GameTitleText>{details.title}</GameTitleText> : <ToolTitleText>{details.title}</ToolTitleText>}
-        <ProjectReasonText className='mb-3'>{details.reason}</ProjectReasonText>
+        <ProjectReasonText>{details.reason}</ProjectReasonText>
+
+        <ProjectInfoOverlay className='d-flex align-items-center mt-1'>
+          <ProjectLabel type="team" text={details.labels.team}></ProjectLabel>
+          <ProjectLabel type="duration" text={details.labels.duration}></ProjectLabel>
+          <ProjectLabel type="tools" text={details.labels.tools}></ProjectLabel>
+        </ProjectInfoOverlay>
+
+        <HorizontalDividerWhiteThin className='my-2' />
+
         <ProjectDescriptionText>{details.description}</ProjectDescriptionText>
       </div>
     </HeroColorWrapper >
@@ -254,7 +257,7 @@ const ProjectReasonText = styled.div`
 `
 
 const HeroAboutText = styled.div`
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
 `
 
 const HorizontalDividerOrange = styled.div`
@@ -270,6 +273,14 @@ const HorizontalDividerPurple = styled.div`
   background-color: ${Colours.PURPLE};
   width: 100%;
 `;
+
+const HorizontalDividerWhiteThin = styled.div`
+  height: 2px;
+  border-radius: 3rem;
+  background-color: rgba(255, 255, 255, 0.25);
+  width: 100%;
+`;
+
 
 const HorizontalMarginLarge = styled.div`
   margin-right: 10rem;
@@ -324,8 +335,9 @@ const StyledResumeAnchor = styled(ResumeButton)`
     }
 `
 
-const StyledImageOrangeBorder = styled(Image)`
+const StyledPortrait = styled(Image)`
   border: 5px solid ${Colours.ORANGE};
+  border-radius: 2rem;
   width: clamp(200px, 20vw, 100%);
   height: auto;
 `;
@@ -343,8 +355,6 @@ const ResponsiveIframe = styled.iframe`
 `;
 
 const ProjectInfoOverlay = styled.div`
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
   color: white; 
   bottom: 6px;
   width: 100%;
