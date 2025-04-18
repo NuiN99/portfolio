@@ -71,7 +71,7 @@ const HeroSection = () => {
       <HorizontalMarginLarge className='px-3 py-0'>
         <Row className='pb-4 mx-auto d-flex justify-content-center'>
           <Col lg={4} md={5} className="d-flex align-items-center justify-content-center">
-            <StyledPortrait src="portrait.jpg" fluid />
+            <StyledPortrait src="portrait.png" fluid />
           </Col>
 
           <Col lg={6} md={7} className='pt-3 text-center my-auto text-light'>
