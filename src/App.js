@@ -147,7 +147,6 @@ const ProjectCard = ({ details, isGame }) => {
           allowFullScreen
           title="Embedded YouTube video"
           sandbox="allow-same-origin allow-scripts allow-presentation"
-          loading='lazy'
         />
       </RelativeDiv>
 
@@ -181,25 +180,6 @@ const ProjectLabel = ({type, text}) => {
 }
 
 const App = () => {
-
-  // refresh videos on leave re-enter tab for mobile fix
-  React.useEffect(() => {
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === 'visible') {
-        const iframes = document.querySelectorAll('iframe');
-        iframes.forEach((iframe) => {
-          const src = iframe.src;
-          iframe.src = '';
-          iframe.src = src;
-        });
-      }
-    };
-    document.addEventListener('visibilitychange', handleVisibilityChange);
-    return () => {
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-    };
-  }, []);
-
   return (
     <>
       <Navbar />
