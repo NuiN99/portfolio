@@ -9,7 +9,7 @@ import Skills from './app/content/skills.json';
 import AboutMeContent from './app/content/aboutme.json';
 import Image from 'react-bootstrap/Image';
 import { ReactSocialMediaIcons } from 'react-social-media-icons';
-import ProgressBar from './app/progressBar';
+import ProjectLabelIcon from './app/projectLabelIcon';
 
 const SocialButton = ({ icon, url, isGitHub = false }) => {
   const [isHighlighted, setIsHighlighted] = React.useState(false);
@@ -80,7 +80,7 @@ const HeroSection = () => {
             </HeroAboutText>
             <StyledAboutMeButton className='mt-3' />
           </Col>
-          <div className='my-auto text-center pt-4 text-light'>
+          <div className='my-auto text-center pt-5 text-light'>
             <SkillsSection />
           </div>
         </Row>
@@ -94,7 +94,7 @@ const SkillsSection = () => {
     <>
       {Skills.map((skill, index) => (
         <SkillLabel key={index} className='m-1'>
-          {skill.name}
+          {skill}
         </SkillLabel>
       ))}
     </>
@@ -140,8 +140,10 @@ const ProjectCard = ({ details, isGame }) => {
   return (
     <HeroColorWrapper className='flex-shrink-0 m-3 w-100 text-light rounded-2'>
       <RelativeDiv>
-        <ProjectInfoOverlay className='px-3 py-1'>
-          
+        <ProjectInfoOverlay className='px-3 py-1 d-flex align-items-center'>
+          <ProjectLabel type="team" text={details.labels.team}></ProjectLabel>
+          <ProjectLabel type="duration" text={details.labels.duration}></ProjectLabel>
+          <ProjectLabel type="tools" text={details.labels.tools}></ProjectLabel>
         </ProjectInfoOverlay>
         
         <ResponsiveIframe
@@ -149,6 +151,7 @@ const ProjectCard = ({ details, isGame }) => {
           allow="autoplay; encrypted-media"
           allowFullScreen
           title="Embedded YouTube video"
+          sandbox="allow-same-origin allow-scripts allow-presentation"
         />
 
       </RelativeDiv>
@@ -159,6 +162,17 @@ const ProjectCard = ({ details, isGame }) => {
         <ProjectDescriptionText>{details.description}</ProjectDescriptionText>
       </div>
     </HeroColorWrapper >
+  )
+}
+
+const ProjectLabel = ({type, text}) => {
+  return(
+    <>
+      <ProjectLabelIcon type={type}/>
+      <ProjectLabelText className='me-3 ms-1'>
+        {text}
+      </ProjectLabelText>
+    </>
   )
 }
 
@@ -325,14 +339,12 @@ const ResponsiveIframe = styled.iframe`
   width: 100%;
   aspect-ratio: 16 / 9;
   border: none;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
   pointer-events: none;
 `;
 
 const ProjectInfoOverlay = styled.div`
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white; 
   bottom: 6px;
   width: 100%;
@@ -341,6 +353,11 @@ const ProjectInfoOverlay = styled.div`
 const RelativeDiv = styled.div`
   position: relative;
   margin-bottom: -9px;
+`
+
+const ProjectLabelText = styled.div`
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
 `
 
 export default App;

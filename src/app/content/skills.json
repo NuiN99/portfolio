@@ -1,23 +1,12 @@
 [
-    {
-        "name": "Unity"
-    },
-    {
-        "name": "Netcode"
-    },
-    {
-        "name": "C#"
-    },
-    {
-        "name": "C++"
-    },
-    {
-        "name": "JavaScript"
-    },
-    {
-        "name": "GitHub"
-    },
-    {
-        "name": "P4V"
-    }    
+    "Unity",
+    "Netcode",
+    "FMOD",
+    "C#",
+    "C++",
+    "JavaScript",
+    "GitHub",
+    "P4V",
+    "Debugging",
+    "Prototyping"
 ]

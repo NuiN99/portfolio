@@ -6,8 +6,7 @@
             "reason": "Submission | Ludum Dare 57 Game Jam",
             "description": "A short horror game about hunting sea monsters that uses volumetric fog and light to create a convincing underwater ambience.",
             "labels":{
-                "role": "Lead Programmer",
-                "tools": "Unity/C#",
+                "tools": "Unity, FMOD",
                 "team": "5",
                 "duration": "3 days"
             }
@@ -18,8 +17,7 @@
             "reason": "Current Project & Future Steam Release",
             "description": "BeetleBall is an online multiplayer soccer game with multiple unique beetle classes. My team and I will be releasing it to Steam in 2025.",
             "labels":{
-                "role": "Lead Programmer",
-                "tools": "Unity/C#",
+                "tools": "Unity, FMOD, NGO",
                 "team": "8",
                 "duration": "3 months"
             }
@@ -30,8 +28,7 @@
             "reason": "Final Project | COMP-246 - Advanced Simulation",
             "description": "A virtual reality combat sandbox featuring active ragdolls and a physically simulated player.",
             "labels":{
-                "role": "Project Lead/Programmer",
-                "tools": "Unity/C#",
+                "tools": "Unity",
                 "team": "4",
                 "duration": "2 weeks"
             }
@@ -42,8 +39,7 @@
             "reason": "Submission | Victoria Global Game Jam 2024",
             "description": "With the use of a tree-like node attachment system, players can attach guns to guns and create massive gun monstrosities.",
             "labels":{
-                "role": "Lead Programmer",
-                "tools": "Unity/C#",
+                "tools": "Unity",
                 "team": "4",
                 "duration": "3 days"
             }
@@ -54,8 +50,7 @@
             "reason": "Submission | Orca Jam 2024",
             "description": "I programmed the balloon movement and physics to feel like a real balloon and it turned out amazing. I also designed the level, which was a fun challenge!",
             "labels":{
-                "role": "Lead Programmer",
-                "tools": "Unity/C#",
+                "tools": "Unity",
                 "team": "7",
                 "duration": "3 days"
             }
@@ -66,8 +61,7 @@
             "reason": "Submission | 2024 Meta Quest Hackathon",
             "description": "A VR prototype created using various Quest 3 SDK's. The game constructs a 3D mesh from the host's real life room data that all players can move around in.",
             "labels":{
-                "role": "Programmer",
-                "tools": "Unity/C#",
+                "tools": "Unity, Quest SDK, NGO",
                 "team": "2",
                 "duration": "2 weeks"
             }
@@ -78,8 +72,7 @@
             "reason": "3rd Place Winner | BIGA $5000 Mini Game Challenge",
             "description": "The goal of this project was to create a simple yet polished game in one week. Our effort paid off and we got third place!",
             "labels":{
-                "role": "Lead Programmer",
-                "tools": "Unity/C#",
+                "tools": "Unity",
                 "team": "5",
                 "duration": "1 week"
             }
@@ -90,8 +83,7 @@
             "reason": "Submission | Ludum Dare 54 Game Jam",
             "description": "Using various sensors, the traffic is programmed to feel as though all of the cars are escaping a city.",
             "labels":{
-                "role": "Programmer",
-                "tools": "Unity/C#",
+                "tools": "Unity",
                 "team": "4",
                 "duration": "3 days"
             }
@@ -102,8 +94,7 @@
             "reason": "Top 100 Submission | Ludum Dare 53 Game Jam",
             "description": "This was my first game jam, and although there were hiccups, in only three days I was left with a game I am still very proud of.",
             "labels":{
-                "role": "Developer",
-                "tools": "Unity/C#",
+                "tools": "Unity",
                 "team": "1",
                 "duration": "3 days"
             }
@@ -114,8 +105,7 @@
             "reason": "Final Project | ICS 214 - Programming from C to C++",
             "description": "After learning C++ and coding small programs, I was tasked with this project, a Tetris clone created using C++ and SFML.",
             "labels":{
-                "role": "Developer",
-                "tools": "SFML/C++",
+                "tools": "SFML (C++)",
                 "team": "1",
                 "duration": "3 days"
             }
@@ -128,8 +118,7 @@
             "reason": "Personal project",
             "description": "An in game debug console for Unity. Commands are created via a custom attribute above a method, and are found automatically via reflection.",
             "labels":{
-                "role": "Developer",
-                "tools": "Unity/C#",
+                "tools": "Unity",
                 "team": "1",
                 "duration": "1 week"
             }
@@ -140,8 +129,7 @@
             "reason": "Personal project",
             "description": "A performant tweening library for Unity that uses C# callbacks. Its simple interface makes it easy to smoothly interpolate between values.",
             "labels":{
-                "role": "Developer",
-                "tools": "Unity/C#",
+                "tools": "Unity",
                 "team": "1",
                 "duration": "1 month"
             }
