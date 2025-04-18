@@ -142,11 +142,12 @@ const ProjectCard = ({ details, isGame }) => {
       <RelativeDiv>
     
         <ResponsiveIframe
-          src={`https://www.youtube.com/embed/${details.src}?autoplay=1&mute=1&controls=0&loop=1&playlist=${details.src}&modestbranding=1&showinfo=0&rel=0`}
+          src={`https://www.youtube-nocookie.com/embed/${details.src}?autoplay=1&mute=1&controls=0&loop=1&playlist=${details.src}&modestbranding=1&showinfo=0&rel=0`}
           allow="autoplay; encrypted-media"
           allowFullScreen
           title="Embedded YouTube video"
           sandbox="allow-same-origin allow-scripts allow-presentation"
+          loading='lazy'
         />
       </RelativeDiv>
 
