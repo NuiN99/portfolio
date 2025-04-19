@@ -1,5 +1,5 @@
 {
-    "games": [
+    "multiplayer": [
         {
             "title": "BeetleBall",
             "youtube": "stgTIEBsjtA",
@@ -21,9 +21,12 @@
             "labels":{
                 "tools": "Unity, Quest SDK, NGO",
                 "team": "2",
-                "duration": "2w"
+                "duration": "1w"
             }
-        },
+        }
+    ],
+
+    "games": [
         {
             "title": "Sinking Hope",
             "youtube": "Deh7cFGzx1o",

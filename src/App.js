@@ -112,19 +112,43 @@ const ProjectsSection = () => {
   return (
     <BGColorWrapper className='pb-3'>
       <HorizontalMarginLarge className='px-2'>
-        <ProjectsGrid isGameSection={true}/>
-        <ProjectsGrid isGameSection={false}/>
+        <ProjectsGrid type={"multiplayer"}/>
+        <ProjectsGrid type={"tools"}/>
+        <ProjectsGrid type={"games"}/>
       </HorizontalMarginLarge>
     </BGColorWrapper>
   );
 }
 
-const ProjectsGrid = ({ isGameSection }) => {
-  const projectsArray = isGameSection ? Projects.games : Projects.tools;
+const ProjectsGrid = ({ type }) => {
+
+  let projectsArray;
+  let projectHeaderText;
+  switch(type){
+    case "multiplayer": {
+      projectsArray = Projects.multiplayer;
+      projectHeaderText = "Multiplayer Games";
+      break;
+    }
+    case "games": 
+    {
+      projectsArray = Projects.games;
+      projectHeaderText = "Other Games";
+      break;
+    }
+    case "tools": {
+      projectsArray = Projects.tools;
+      projectHeaderText = "Systems & Tools";
+      break;
+    }
+  }
+
+  let isGameSection = type == "multiplayer" || type == "games";
+
   return (
     <>
       <ProjectSectionText className='text-center px-3 pt-3'>
-        {isGameSection ? "Games" : "Systems & Tools"}
+        {projectHeaderText}
         <div className="container">
           {isGameSection ? <HorizontalDividerOrange /> : <HorizontalDividerPurple />}
         </div>
