@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
-import { Row, Col, Card, Button } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import Colours from './app/content/colours.js';
 import Projects from './app/content/projects.json';
 import Skills from './app/content/skills.json';
@@ -149,7 +149,7 @@ const ProjectCard = ({ details, isGame }) => {
       <RelativeDiv>
     
         <ResponsiveIframe
-          src={`https://www.youtube-nocookie.com/embed/${details.src}?autoplay=1&mute=1&controls=0&loop=1&playlist=${details.src}&modestbranding=1&showinfo=0&rel=0`}
+          src={`https://www.youtube-nocookie.com/embed/${details.youtube}?autoplay=1&mute=1&controls=0&loop=1&playlist=${details.youtube}&modestbranding=1&showinfo=0&rel=0`}
           allow="autoplay; encrypted-media"
           allowFullScreen
           title="Embedded YouTube video"
@@ -158,7 +158,15 @@ const ProjectCard = ({ details, isGame }) => {
       </RelativeDiv>
 
       <div className='p-3'>
-        {isGame ? <GameTitleText>{details.title}</GameTitleText> : <ToolTitleText>{details.title}</ToolTitleText>}
+        <ProjectHeaderRow className="d-flex justify-content-between align-items-start">
+          {isGame ? <GameTitleText>{details.title}</GameTitleText> : <ToolTitleText>{details.title}</ToolTitleText>}
+          {details.link && (
+            <ProjectLinkButton className='my-auto' href={details.link} target="_blank" rel="noopener noreferrer">
+              {isGame ? "itch.io" : "GitHub"}
+            </ProjectLinkButton>
+          )}
+        </ProjectHeaderRow>
+        
         <ProjectReasonText>{details.reason}</ProjectReasonText>
 
         <ProjectInfoOverlay className='d-flex align-items-center mt-1'>
@@ -354,6 +362,7 @@ const StyledAboutMeButton = styled(AboutMeButton)`
 
     &:hover {
       background-color: ${Colours.ORANGE};
+      color: white;
     }
 `
 
@@ -370,6 +379,7 @@ const StyledResumeButton = styled(ResumeButton)`
 
     &:hover {
       background-color: ${Colours.ORANGE};
+      color: white;
     }
 `
 
@@ -379,11 +389,6 @@ const StyledPortrait = styled(Image)`
   width: clamp(200px, 20vw, 100%);
   height: auto;
 `;
-
-const FluidVideo = styled.video`
-  width: 100%;
-  height: auto;
-`
 
 const ResponsiveIframe = styled.iframe`
   width: 100%;
@@ -407,5 +412,26 @@ const ProjectLabelText = styled.div`
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.75);
 `
+
+const ProjectHeaderRow = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+`;
+
+const ProjectLinkButton = styled.a`
+  background-color: ${Colours.PURPLE};
+  color: ${Colours.HERO};
+  padding: 4px 10px;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    background-color: ${Colours.ORANGE};
+    color: white;
+  }
+`;
 
 export default App;
