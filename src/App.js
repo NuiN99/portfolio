@@ -28,12 +28,19 @@ const SocialButton = ({ icon, url, isGitHub = false }) => {
 }
 
 const AboutMeButton = (props) => {
+  const handleClick = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth'
+    });
+  };
+
   return (
-    <button {...props}>
+    <button {...props} onClick={handleClick}>
       More About Me
     </button>
-  )
-}
+  );
+};
 
 const ResumeButton = (props) => {
   return (
@@ -56,7 +63,7 @@ const Navbar = () => {
             <Col className='col-5 d-flex justify-content-end align-items-center'>
               <SocialButton icon="linkedin" url="https://www.linkedin.com/in/cai-plank/" />
               <SocialButton icon="github" url="https://github.com/NuiN99" isGitHub={true} />
-              <StyledResumeAnchor href="caiplankresume.pdf" target="_blank" rel="noreferrer" />
+              <StyledResumeButton href="caiplankresume.pdf" target="_blank" rel="noreferrer" />
             </Col>
           </Row>
         </HorizontalMarginLarge>
@@ -103,7 +110,7 @@ const SkillsSection = () => {
 
 const ProjectsSection = () => {
   return (
-    <BGColorWrapper>
+    <BGColorWrapper className='pb-3'>
       <HorizontalMarginLarge className='px-2'>
         <ProjectsGrid isGameSection={true}/>
         <ProjectsGrid isGameSection={false}/>
@@ -179,12 +186,34 @@ const ProjectLabel = ({type, text}) => {
   )
 }
 
+const AboutMeSection = () => {
+  return(
+    <AboutMeColorWrapper className='p-5 pt-4'>
+      <HorizontalMarginLarge className='mt-5 mx-lg-5 mx-md-0 mx-sm-0 mb-4'>
+        <HorizontalMarginLarge className='px-lg-5 px-md-0 px-sm-0'>
+          <div className='mx-auto'>
+            <AboutMeIntroductionText className='h3'>
+              Hey, I'm Cai! 
+            </AboutMeIntroductionText>
+            <HeroAboutText className='mx-auto mt-4'>
+              {AboutMeContent.full1}
+              <br/><br/>
+              {AboutMeContent.full2}
+            </HeroAboutText>
+          </div>
+        </HorizontalMarginLarge>
+      </HorizontalMarginLarge>
+    </AboutMeColorWrapper>
+  );
+}
+
 const App = () => {
   return (
     <>
       <Navbar />
       <HeroSection />
       <ProjectsSection />
+      <AboutMeSection/>
     </>
   )
 }
@@ -202,6 +231,15 @@ const HeroColorWrapper = styled.div`
 
 const BGColorWrapper = styled.div`
   background-color: ${Colours.BG};
+`
+
+const AboutMeColorWrapper = styled.div`
+  background-color: ${Colours.PURPLE};
+  color: ${Colours.HERO};
+`
+
+const AboutMeIntroductionText = styled.div`
+  color: ${Colours.HERO}
 `
 
 const NameText = styled.div`
@@ -319,9 +357,9 @@ const StyledAboutMeButton = styled(AboutMeButton)`
     }
 `
 
-const StyledResumeAnchor = styled(ResumeButton)`
+const StyledResumeButton = styled(ResumeButton)`
     background-color: ${Colours.PURPLE};
-    border-radius: 10rem;
+    border-radius: 0.5rem;
     color: ${Colours.HERO};
     padding: 8px 15px;
     text-align: center;
