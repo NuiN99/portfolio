@@ -201,7 +201,7 @@ const AboutMeSection = () => {
         <HorizontalMarginLarge className='px-lg-5 px-md-0 px-sm-0'>
           <div className='mx-auto'>
             <AboutMeIntroductionText className='h3'>
-              Hey, I'm Cai! 
+              {"Hey, I'm Cai!"} 
             </AboutMeIntroductionText>
             <HeroAboutText className='mx-auto mt-4'>
               {AboutMeContent.full1}
