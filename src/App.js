@@ -171,7 +171,6 @@ const ProjectCard = ({ details, isGame }) => {
   return (
     <HeroColorWrapper className='flex-shrink-0 m-3 w-100 text-light rounded-2'>
       <RelativeDiv>
-    
         <ResponsiveIframe
           src={`https://www.youtube-nocookie.com/embed/${details.youtube}?autoplay=1&mute=1&controls=0&loop=1&playlist=${details.youtube}&modestbranding=1&showinfo=0&rel=0`}
           allow="autoplay; encrypted-media"
@@ -418,7 +417,6 @@ const ResponsiveIframe = styled.iframe`
   width: 100%;
   aspect-ratio: 16 / 9;
   border: none;
-  pointer-events: none;
 `;
 
 const ProjectInfoOverlay = styled.div`
